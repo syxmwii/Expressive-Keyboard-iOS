@@ -1,0 +1,13194 @@
+[
+  {
+    "id": "ru",
+    "label": "RU",
+    "space": "Русский",
+    "title": "Русский",
+    "locale": "ru-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "ru",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en",
+    "label": "EN",
+    "space": "English",
+    "title": "Английский",
+    "locale": "en-US",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-gb",
+    "label": "GBR",
+    "space": "English (UK)",
+    "title": "Английский (Великобритания)",
+    "locale": "en-GB",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-au",
+    "label": "AUS",
+    "space": "English (AU)",
+    "title": "Английский (Австралия)",
+    "locale": "en-AU",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-ca",
+    "label": "CAN",
+    "space": "English (CA)",
+    "title": "Английский (Канада)",
+    "locale": "en-CA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-in",
+    "label": "IND",
+    "space": "English (IN)",
+    "title": "Английский (Индия)",
+    "locale": "en-IN",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-ie",
+    "label": "IRL",
+    "space": "English (IE)",
+    "title": "Английский (Ирландия)",
+    "locale": "en-IE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-nz",
+    "label": "NZL",
+    "space": "English (NZ)",
+    "title": "Английский (Новая Зеландия)",
+    "locale": "en-NZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "en-za",
+    "label": "ZAF",
+    "space": "English (ZA)",
+    "title": "Английский (ЮАР)",
+    "locale": "en-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "en",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "uk",
+    "label": "UK",
+    "space": "Українська",
+    "title": "Украинский",
+    "locale": "uk-UA",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ї"
+      ],
+      [
+        "ф",
+        "і",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "є"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю"
+      ]
+    ],
+    "accents": {
+      "г": [
+        "ґ"
+      ],
+      "ь": [
+        "'",
+        "ʼ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "uk",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "be",
+    "label": "BE",
+    "space": "Беларуская",
+    "title": "Белорусский",
+    "locale": "be-BY",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "ў",
+        "з",
+        "х",
+        "'"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "і",
+        "т",
+        "ь",
+        "б",
+        "ю"
+      ]
+    ],
+    "accents": {
+      "е": [
+        "ё"
+      ],
+      "г": [
+        "ґ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kk",
+    "label": "KK",
+    "space": "Қазақ",
+    "title": "Казахский",
+    "locale": "kk-KZ",
+    "rows": [
+      [
+        "ә",
+        "і",
+        "ң",
+        "ғ",
+        "ү",
+        "ұ",
+        "қ",
+        "ө",
+        "һ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "kk",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ky",
+    "label": "KY",
+    "space": "Кыргызча",
+    "title": "Киргизский",
+    "locale": "ky-KG",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "н": [
+        "ң"
+      ],
+      "о": [
+        "ө"
+      ],
+      "у": [
+        "ү"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tg",
+    "label": "TG",
+    "space": "Тоҷикӣ",
+    "title": "Таджикский",
+    "locale": "tg-TJ",
+    "rows": [
+      [
+        "ғ",
+        "ӣ",
+        "қ",
+        "ӯ",
+        "ҳ",
+        "ҷ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tt",
+    "label": "TT",
+    "space": "Татарча",
+    "title": "Татарский",
+    "locale": "tt-RU",
+    "rows": [
+      [
+        "ә",
+        "ө",
+        "ү",
+        "җ",
+        "ң",
+        "һ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ba",
+    "label": "BA",
+    "space": "Башҡортса",
+    "title": "Башкирский",
+    "locale": "ba-RU",
+    "rows": [
+      [
+        "ә",
+        "ө",
+        "ү",
+        "ғ",
+        "ҡ",
+        "ң",
+        "ҙ",
+        "ҫ",
+        "һ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mn",
+    "label": "MN",
+    "space": "Монгол",
+    "title": "Монгольский",
+    "locale": "mn-MN",
+    "rows": [
+      [
+        "ф",
+        "ц",
+        "у",
+        "ж",
+        "э",
+        "н",
+        "г",
+        "ш",
+        "ү",
+        "з",
+        "к",
+        "ъ"
+      ],
+      [
+        "й",
+        "ы",
+        "б",
+        "ө",
+        "а",
+        "х",
+        "р",
+        "о",
+        "л",
+        "д",
+        "п"
+      ],
+      [
+        "я",
+        "ч",
+        "ё",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "в",
+        "ю"
+      ]
+    ],
+    "accents": {
+      "е": [
+        "ё"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bg",
+    "label": "BG",
+    "space": "Български",
+    "title": "Болгарский",
+    "locale": "bg-BG",
+    "rows": [
+      [
+        "я",
+        "в",
+        "е",
+        "р",
+        "т",
+        "ъ",
+        "у",
+        "и",
+        "о",
+        "п",
+        "ш",
+        "щ"
+      ],
+      [
+        "а",
+        "с",
+        "д",
+        "ф",
+        "г",
+        "х",
+        "й",
+        "к",
+        "л",
+        "ч",
+        "ю"
+      ],
+      [
+        "з",
+        "ь",
+        "ц",
+        "ж",
+        "б",
+        "н",
+        "м"
+      ]
+    ],
+    "accents": {
+      "и": [
+        "ѝ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "bg",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sr",
+    "label": "SR",
+    "space": "Српски",
+    "title": "Сербский",
+    "locale": "sr-RS",
+    "rows": [
+      [
+        "љ",
+        "њ",
+        "е",
+        "р",
+        "т",
+        "з",
+        "у",
+        "и",
+        "о",
+        "п",
+        "ш",
+        "ђ"
+      ],
+      [
+        "а",
+        "с",
+        "д",
+        "ф",
+        "г",
+        "х",
+        "ј",
+        "к",
+        "л",
+        "ч",
+        "ћ"
+      ],
+      [
+        "џ",
+        "ц",
+        "в",
+        "б",
+        "н",
+        "м",
+        "ж"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "sr",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mk",
+    "label": "MK",
+    "space": "Македонски",
+    "title": "Македонский",
+    "locale": "mk-MK",
+    "rows": [
+      [
+        "љ",
+        "њ",
+        "е",
+        "р",
+        "т",
+        "ѕ",
+        "у",
+        "и",
+        "о",
+        "п",
+        "ш",
+        "ѓ"
+      ],
+      [
+        "а",
+        "с",
+        "д",
+        "ф",
+        "г",
+        "х",
+        "ј",
+        "к",
+        "л",
+        "ч",
+        "ќ"
+      ],
+      [
+        "з",
+        "џ",
+        "ц",
+        "в",
+        "б",
+        "н",
+        "м",
+        "ж"
+      ]
+    ],
+    "accents": {
+      "и": [
+        "ѝ"
+      ],
+      "е": [
+        "ѐ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "mk",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "de",
+    "label": "DE",
+    "space": "Deutsch",
+    "title": "Немецкий",
+    "locale": "de-DE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ü"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "ä"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "s": [
+        "ß"
+      ],
+      "e": [
+        "é",
+        "è"
+      ],
+      "a": [
+        "à",
+        "â"
+      ],
+      "o": [
+        "ô"
+      ]
+    },
+    "shift": {},
+    "dictionary": "de",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fr",
+    "label": "FR",
+    "space": "Français",
+    "title": "Французский",
+    "locale": "fr-FR",
+    "rows": [
+      [
+        "a",
+        "z",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "q",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "m"
+      ],
+      [
+        "w",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "'"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "â",
+        "æ",
+        "ä"
+      ],
+      "e": [
+        "é",
+        "è",
+        "ê",
+        "ë"
+      ],
+      "i": [
+        "î",
+        "ï"
+      ],
+      "o": [
+        "ô",
+        "œ",
+        "ö"
+      ],
+      "u": [
+        "ù",
+        "û",
+        "ü"
+      ],
+      "c": [
+        "ç"
+      ],
+      "y": [
+        "ÿ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "fr",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "es",
+    "label": "ES",
+    "space": "Español",
+    "title": "Испанский",
+    "locale": "es-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ],
+      "n": [
+        "ñ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "es",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "it",
+    "label": "IT",
+    "space": "Italiano",
+    "title": "Итальянский",
+    "locale": "it-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è",
+        "é"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": "it",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "pt",
+    "label": "PT",
+    "space": "Português",
+    "title": "Португальский",
+    "locale": "pt-BR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ç"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ã",
+        "á",
+        "à",
+        "â"
+      ],
+      "e": [
+        "é",
+        "ê"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "õ",
+        "ó",
+        "ô"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": "pt",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "nl",
+    "label": "NL",
+    "space": "Nederlands",
+    "title": "Нидерландский",
+    "locale": "nl-NL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é",
+        "ë",
+        "è"
+      ],
+      "i": [
+        "ï",
+        "í"
+      ],
+      "o": [
+        "ó",
+        "ö"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ],
+      "a": [
+        "á"
+      ]
+    },
+    "shift": {},
+    "dictionary": "nl",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "pl",
+    "label": "PL",
+    "space": "Polski",
+    "title": "Польский",
+    "locale": "pl-PL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ą"
+      ],
+      "c": [
+        "ć"
+      ],
+      "e": [
+        "ę"
+      ],
+      "l": [
+        "ł"
+      ],
+      "n": [
+        "ń"
+      ],
+      "o": [
+        "ó"
+      ],
+      "s": [
+        "ś"
+      ],
+      "z": [
+        "ż",
+        "ź"
+      ]
+    },
+    "shift": {},
+    "dictionary": "pl",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "cs",
+    "label": "CS",
+    "space": "Čeština",
+    "title": "Чешский",
+    "locale": "cs-CZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ú"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ů"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "c": [
+        "č"
+      ],
+      "d": [
+        "ď"
+      ],
+      "e": [
+        "é",
+        "ě"
+      ],
+      "i": [
+        "í"
+      ],
+      "n": [
+        "ň"
+      ],
+      "o": [
+        "ó"
+      ],
+      "r": [
+        "ř"
+      ],
+      "s": [
+        "š"
+      ],
+      "t": [
+        "ť"
+      ],
+      "u": [
+        "ú",
+        "ů"
+      ],
+      "y": [
+        "ý"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "cs",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sk",
+    "label": "SK",
+    "space": "Slovenčina",
+    "title": "Словацкий",
+    "locale": "sk-SK",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ú"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ô"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ä"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á",
+        "ä"
+      ],
+      "c": [
+        "č"
+      ],
+      "d": [
+        "ď"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "l": [
+        "ĺ",
+        "ľ"
+      ],
+      "n": [
+        "ň"
+      ],
+      "o": [
+        "ó",
+        "ô"
+      ],
+      "r": [
+        "ŕ"
+      ],
+      "s": [
+        "š"
+      ],
+      "t": [
+        "ť"
+      ],
+      "u": [
+        "ú"
+      ],
+      "y": [
+        "ý"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "sk",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sl",
+    "label": "SL",
+    "space": "Slovenščina",
+    "title": "Словенский",
+    "locale": "sl-SI",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "š"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "č",
+        "ž"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "č",
+        "ć"
+      ],
+      "s": [
+        "š"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "sl",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "hr",
+    "label": "HR",
+    "space": "Hrvatski",
+    "title": "Хорватский",
+    "locale": "hr-HR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "š",
+        "đ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "č",
+        "ć",
+        "ž"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "hr",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bs",
+    "label": "BS",
+    "space": "Bosanski",
+    "title": "Боснийский",
+    "locale": "bs-BA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "š",
+        "đ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "č",
+        "ć",
+        "ž"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "bs",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sq",
+    "label": "SQ",
+    "space": "Shqip",
+    "title": "Албанский",
+    "locale": "sq-AL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ç"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ë"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "sq",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "hu",
+    "label": "HU",
+    "space": "Magyar",
+    "title": "Венгерский",
+    "locale": "hu-HU",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ő",
+        "ú"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "é",
+        "á",
+        "ű"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ö",
+        "ü",
+        "ó"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó",
+        "ö",
+        "ő"
+      ],
+      "u": [
+        "ú",
+        "ü",
+        "ű"
+      ]
+    },
+    "shift": {},
+    "dictionary": "hu",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ro",
+    "label": "RO",
+    "space": "Română",
+    "title": "Румынский",
+    "locale": "ro-RO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ă",
+        "â"
+      ],
+      "i": [
+        "î"
+      ],
+      "s": [
+        "ș"
+      ],
+      "t": [
+        "ț"
+      ]
+    },
+    "shift": {},
+    "dictionary": "ro",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tr",
+    "label": "TR",
+    "space": "Türkçe",
+    "title": "Турецкий",
+    "locale": "tr-TR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "ı",
+        "o",
+        "p",
+        "ğ",
+        "ü"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ş",
+        "i"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ö",
+        "ç"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "â"
+      ],
+      "i": [
+        "î"
+      ],
+      "u": [
+        "û"
+      ]
+    },
+    "shift": {},
+    "dictionary": "tr",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "az",
+    "label": "AZ",
+    "space": "Azərbaycan",
+    "title": "Азербайджанский",
+    "locale": "az-AZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ö",
+        "ğ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ı",
+        "ə"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ç",
+        "ş"
+      ]
+    ],
+    "accents": {
+      "u": [
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "uz",
+    "label": "UZ",
+    "space": "Oʻzbek",
+    "title": "Узбекский",
+    "locale": "uz-UZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ʻ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "o": [
+        "ʻ"
+      ],
+      "g": [
+        "ʻ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sv",
+    "label": "SV",
+    "space": "Svenska",
+    "title": "Шведский",
+    "locale": "sv-SE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "ä"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é"
+      ],
+      "a": [
+        "á"
+      ]
+    },
+    "shift": {},
+    "dictionary": "sv",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fi",
+    "label": "FI",
+    "space": "Suomi",
+    "title": "Финский",
+    "locale": "fi-FI",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "ä"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "s": [
+        "š"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "fi",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "no",
+    "label": "NO",
+    "space": "Norsk",
+    "title": "Норвежский",
+    "locale": "nb-NO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ø",
+        "æ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é",
+        "è"
+      ],
+      "o": [
+        "ó",
+        "ò",
+        "ô"
+      ],
+      "a": [
+        "à",
+        "á"
+      ]
+    },
+    "shift": {},
+    "dictionary": "no",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "da",
+    "label": "DA",
+    "space": "Dansk",
+    "title": "Датский",
+    "locale": "da-DK",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "æ",
+        "ø"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é"
+      ],
+      "a": [
+        "á"
+      ],
+      "o": [
+        "ó"
+      ]
+    },
+    "shift": {},
+    "dictionary": "da",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "is",
+    "label": "IS",
+    "space": "Íslenska",
+    "title": "Исландский",
+    "locale": "is-IS",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ð"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "æ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "þ"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó",
+        "ö"
+      ],
+      "u": [
+        "ú"
+      ],
+      "y": [
+        "ý"
+      ]
+    },
+    "shift": {},
+    "dictionary": "is",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "et",
+    "label": "ET",
+    "space": "Eesti",
+    "title": "Эстонский",
+    "locale": "et-EE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ü",
+        "õ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "ä"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "s": [
+        "š"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "et",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lv",
+    "label": "LV",
+    "space": "Latviešu",
+    "title": "Латышский",
+    "locale": "lv-LV",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "c": [
+        "č"
+      ],
+      "e": [
+        "ē"
+      ],
+      "g": [
+        "ģ"
+      ],
+      "i": [
+        "ī"
+      ],
+      "k": [
+        "ķ"
+      ],
+      "l": [
+        "ļ"
+      ],
+      "n": [
+        "ņ"
+      ],
+      "s": [
+        "š"
+      ],
+      "u": [
+        "ū"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": "lv",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lt",
+    "label": "LT",
+    "space": "Lietuvių",
+    "title": "Литовский",
+    "locale": "lt-LT",
+    "rows": [
+      [
+        "ą",
+        "č",
+        "ę",
+        "ė",
+        "į",
+        "š",
+        "ų",
+        "ū",
+        "ž"
+      ],
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "lt",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ca",
+    "label": "CA",
+    "space": "Català",
+    "title": "Каталанский",
+    "locale": "ca-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ç"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "é",
+        "è"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó",
+        "ò"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ],
+      "l": [
+        "·"
+      ]
+    },
+    "shift": {},
+    "dictionary": "ca",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "eu",
+    "label": "EU",
+    "space": "Euskara",
+    "title": "Баскский",
+    "locale": "eu-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "eu",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "gl",
+    "label": "GL",
+    "space": "Galego",
+    "title": "Галисийский",
+    "locale": "gl-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": "gl",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "eo",
+    "label": "EO",
+    "space": "Esperanto",
+    "title": "Эсперанто",
+    "locale": "eo",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "ĉ"
+      ],
+      "g": [
+        "ĝ"
+      ],
+      "h": [
+        "ĥ"
+      ],
+      "j": [
+        "ĵ"
+      ],
+      "s": [
+        "ŝ"
+      ],
+      "u": [
+        "ŭ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "eo",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mt",
+    "label": "MT",
+    "space": "Malti",
+    "title": "Мальтийский",
+    "locale": "mt-MT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ġ",
+        "ħ"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ċ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ż"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ga",
+    "label": "GA",
+    "space": "Gaeilge",
+    "title": "Ирландский",
+    "locale": "ga-IE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "cy",
+    "label": "CY",
+    "space": "Cymraeg",
+    "title": "Валлийский",
+    "locale": "cy-GB",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "â"
+      ],
+      "e": [
+        "ê"
+      ],
+      "i": [
+        "î"
+      ],
+      "o": [
+        "ô"
+      ],
+      "u": [
+        "û"
+      ],
+      "w": [
+        "ŵ"
+      ],
+      "y": [
+        "ŷ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "af",
+    "label": "AF",
+    "space": "Afrikaans",
+    "title": "Африкаанс",
+    "locale": "af-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é",
+        "è",
+        "ê",
+        "ë"
+      ],
+      "i": [
+        "î",
+        "ï"
+      ],
+      "o": [
+        "ô",
+        "ö"
+      ],
+      "u": [
+        "û",
+        "ü"
+      ],
+      "y": [
+        "ý"
+      ]
+    },
+    "shift": {},
+    "dictionary": "af",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "id",
+    "label": "ID",
+    "space": "Indonesia",
+    "title": "Индонезийский",
+    "locale": "id-ID",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "id",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ms",
+    "label": "MS",
+    "space": "Melayu",
+    "title": "Малайский",
+    "locale": "ms-MY",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "ms",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tl",
+    "label": "TL",
+    "space": "Filipino",
+    "title": "Филиппинский",
+    "locale": "fil-PH",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "n": [
+        "ñ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "tl",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sw",
+    "label": "SW",
+    "space": "Kiswahili",
+    "title": "Суахили",
+    "locale": "sw-KE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "vi",
+    "label": "VI",
+    "space": "Tiếng Việt",
+    "title": "Вьетнамский (Telex)",
+    "locale": "vi-VN",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ă",
+        "â"
+      ],
+      "d": [
+        "đ"
+      ],
+      "e": [
+        "ê"
+      ],
+      "o": [
+        "ô",
+        "ơ"
+      ],
+      "u": [
+        "ư"
+      ]
+    },
+    "shift": {},
+    "dictionary": "vi",
+    "hasCase": true,
+    "composer": "telex",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "el",
+    "label": "EL",
+    "space": "Ελληνικά",
+    "title": "Греческий",
+    "locale": "el-GR",
+    "rows": [
+      [
+        "ς",
+        "ε",
+        "ρ",
+        "τ",
+        "υ",
+        "θ",
+        "ι",
+        "ο",
+        "π"
+      ],
+      [
+        "α",
+        "σ",
+        "δ",
+        "φ",
+        "γ",
+        "η",
+        "ξ",
+        "κ",
+        "λ"
+      ],
+      [
+        "ζ",
+        "χ",
+        "ψ",
+        "ω",
+        "β",
+        "ν",
+        "μ"
+      ]
+    ],
+    "accents": {
+      "α": [
+        "ά"
+      ],
+      "ε": [
+        "έ"
+      ],
+      "η": [
+        "ή"
+      ],
+      "ι": [
+        "ί",
+        "ϊ",
+        "ΐ"
+      ],
+      "ο": [
+        "ό"
+      ],
+      "υ": [
+        "ύ",
+        "ϋ",
+        "ΰ"
+      ],
+      "ω": [
+        "ώ"
+      ],
+      "σ": [
+        "ς"
+      ]
+    },
+    "shift": {},
+    "dictionary": "el",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ka",
+    "label": "KA",
+    "space": "ქართული",
+    "title": "Грузинский",
+    "locale": "ka-GE",
+    "rows": [
+      [
+        "ქ",
+        "წ",
+        "ე",
+        "რ",
+        "ტ",
+        "ყ",
+        "უ",
+        "ი",
+        "ო",
+        "პ"
+      ],
+      [
+        "ა",
+        "ს",
+        "დ",
+        "ფ",
+        "გ",
+        "ჰ",
+        "ჯ",
+        "კ",
+        "ლ"
+      ],
+      [
+        "ზ",
+        "ხ",
+        "ც",
+        "ვ",
+        "ბ",
+        "ნ",
+        "მ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "წ": "ჭ",
+      "რ": "ღ",
+      "ტ": "თ",
+      "ს": "შ",
+      "ჯ": "ჟ",
+      "ზ": "ძ",
+      "ც": "ჩ"
+    },
+    "dictionary": "ka",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "hy",
+    "label": "HY",
+    "space": "Հայերեն",
+    "title": "Армянский",
+    "locale": "hy-AM",
+    "rows": [
+      [
+        "է",
+        "թ",
+        "փ",
+        "ձ",
+        "ջ",
+        "ր",
+        "չ",
+        "ճ",
+        "ժ",
+        "ծ"
+      ],
+      [
+        "ք",
+        "ո",
+        "ե",
+        "ռ",
+        "տ",
+        "ը",
+        "ւ",
+        "ի",
+        "օ",
+        "պ"
+      ],
+      [
+        "ա",
+        "ս",
+        "դ",
+        "ֆ",
+        "գ",
+        "հ",
+        "յ",
+        "կ",
+        "լ",
+        "խ"
+      ],
+      [
+        "զ",
+        "ղ",
+        "ց",
+        "վ",
+        "բ",
+        "ն",
+        "մ",
+        "շ"
+      ]
+    ],
+    "accents": {
+      "ե": [
+        "և"
+      ]
+    },
+    "shift": {},
+    "dictionary": "hy",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "he",
+    "label": "HE",
+    "space": "עברית",
+    "title": "Иврит",
+    "locale": "he-IL",
+    "rows": [
+      [
+        "ק",
+        "ר",
+        "א",
+        "ט",
+        "ו",
+        "ן",
+        "ם",
+        "פ"
+      ],
+      [
+        "ש",
+        "ד",
+        "ג",
+        "כ",
+        "ע",
+        "י",
+        "ח",
+        "ל",
+        "ך",
+        "ף"
+      ],
+      [
+        "ז",
+        "ס",
+        "ב",
+        "ה",
+        "נ",
+        "מ",
+        "צ",
+        "ת",
+        "ץ"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": "he",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "ar",
+    "label": "AR",
+    "space": "العربية",
+    "title": "Арабский",
+    "locale": "ar-SA",
+    "rows": [
+      [
+        "ض",
+        "ص",
+        "ث",
+        "ق",
+        "ف",
+        "غ",
+        "ع",
+        "ه",
+        "خ",
+        "ح",
+        "ج",
+        "د"
+      ],
+      [
+        "ش",
+        "س",
+        "ي",
+        "ب",
+        "ل",
+        "ا",
+        "ت",
+        "ن",
+        "م",
+        "ك",
+        "ط"
+      ],
+      [
+        "ئ",
+        "ء",
+        "ؤ",
+        "ر",
+        "لا",
+        "ى",
+        "ة",
+        "و",
+        "ز",
+        "ظ"
+      ]
+    ],
+    "accents": {
+      "ا": [
+        "أ",
+        "إ",
+        "آ"
+      ],
+      "ي": [
+        "ى"
+      ],
+      "ه": [
+        "ة"
+      ],
+      "و": [
+        "ؤ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "ar",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "ar-eg",
+    "label": "EG",
+    "space": "العربية (مصر)",
+    "title": "Арабский (Египет)",
+    "locale": "ar-EG",
+    "rows": [
+      [
+        "ض",
+        "ص",
+        "ث",
+        "ق",
+        "ف",
+        "غ",
+        "ع",
+        "ه",
+        "خ",
+        "ح",
+        "ج",
+        "د"
+      ],
+      [
+        "ش",
+        "س",
+        "ي",
+        "ب",
+        "ل",
+        "ا",
+        "ت",
+        "ن",
+        "م",
+        "ك",
+        "ط"
+      ],
+      [
+        "ئ",
+        "ء",
+        "ؤ",
+        "ر",
+        "لا",
+        "ى",
+        "ة",
+        "و",
+        "ز",
+        "ظ"
+      ]
+    ],
+    "accents": {
+      "ا": [
+        "أ",
+        "إ",
+        "آ"
+      ],
+      "ي": [
+        "ى"
+      ],
+      "ه": [
+        "ة"
+      ],
+      "و": [
+        "ؤ"
+      ],
+      "َ": [
+        "ً"
+      ],
+      "ُ": [
+        "ٌ"
+      ],
+      "ِ": [
+        "ٍ"
+      ]
+    },
+    "shift": {
+      "ض": "َ",
+      "ص": "ً",
+      "ث": "ُ",
+      "ق": "ٌ",
+      "ف": "ِ",
+      "غ": "ٍ",
+      "ع": "ْ",
+      "ه": "ّ",
+      "خ": "ـ",
+      "ا": "ٱ",
+      "ي": "ئ"
+    },
+    "dictionary": "ar",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "fa",
+    "label": "FA",
+    "space": "فارسی",
+    "title": "Персидский",
+    "locale": "fa-IR",
+    "rows": [
+      [
+        "ض",
+        "ص",
+        "ث",
+        "ق",
+        "ف",
+        "غ",
+        "ع",
+        "ه",
+        "خ",
+        "ح",
+        "ج",
+        "چ"
+      ],
+      [
+        "ش",
+        "س",
+        "ی",
+        "ب",
+        "ل",
+        "ا",
+        "ت",
+        "ن",
+        "م",
+        "ک",
+        "گ"
+      ],
+      [
+        "ظ",
+        "ط",
+        "ز",
+        "ر",
+        "ذ",
+        "د",
+        "پ",
+        "و",
+        "ژ"
+      ]
+    ],
+    "accents": {
+      "ا": [
+        "آ",
+        "أ"
+      ],
+      "ی": [
+        "ئ"
+      ],
+      "ه": [
+        "ۀ"
+      ],
+      "و": [
+        "ؤ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "fa",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "ur",
+    "label": "UR",
+    "space": "اردو",
+    "title": "Урду",
+    "locale": "ur-PK",
+    "rows": [
+      [
+        "ط",
+        "ص",
+        "ھ",
+        "د",
+        "ٹ",
+        "پ",
+        "ت",
+        "ب",
+        "ج",
+        "ح"
+      ],
+      [
+        "م",
+        "و",
+        "ر",
+        "ن",
+        "ل",
+        "ہ",
+        "ا",
+        "ک",
+        "ی"
+      ],
+      [
+        "ق",
+        "ف",
+        "ے",
+        "س",
+        "ش",
+        "غ",
+        "ع"
+      ]
+    ],
+    "accents": {
+      "د": [
+        "ڈ",
+        "ذ"
+      ],
+      "ر": [
+        "ڑ",
+        "ز",
+        "ژ"
+      ],
+      "ن": [
+        "ں"
+      ],
+      "س": [
+        "ث"
+      ],
+      "ت": [
+        "ث"
+      ],
+      "ض": [
+        "ظ"
+      ],
+      "ح": [
+        "خ"
+      ],
+      "ج": [
+        "چ"
+      ],
+      "ک": [
+        "گ"
+      ],
+      "ا": [
+        "آ"
+      ],
+      "ی": [
+        "ئ"
+      ],
+      "ہ": [
+        "ۃ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "ur",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "hi",
+    "label": "HI",
+    "space": "हिन्दी",
+    "title": "Хинди",
+    "locale": "hi-IN",
+    "rows": [
+      [
+        "ौ",
+        "ै",
+        "ा",
+        "ी",
+        "ू",
+        "ब",
+        "ह",
+        "ग",
+        "द",
+        "ज",
+        "ड"
+      ],
+      [
+        "ो",
+        "े",
+        "्",
+        "ि",
+        "ु",
+        "प",
+        "र",
+        "क",
+        "त",
+        "च",
+        "ट"
+      ],
+      [
+        "ं",
+        "म",
+        "न",
+        "व",
+        "ल",
+        "स",
+        "य"
+      ]
+    ],
+    "accents": {
+      "र": [
+        "ृ",
+        "ऋ"
+      ]
+    },
+    "shift": {
+      "ौ": "औ",
+      "ै": "ऐ",
+      "ा": "आ",
+      "ी": "ई",
+      "ू": "ऊ",
+      "ब": "भ",
+      "ह": "ङ",
+      "ग": "घ",
+      "द": "ध",
+      "ज": "झ",
+      "ड": "ढ",
+      "ो": "ओ",
+      "े": "ए",
+      "्": "अ",
+      "ि": "इ",
+      "ु": "उ",
+      "प": "फ",
+      "र": "ऱ",
+      "क": "ख",
+      "त": "थ",
+      "च": "छ",
+      "ट": "ठ",
+      "ं": "ँ",
+      "म": "ण",
+      "न": "ञ",
+      "व": "ऋ",
+      "ल": "ळ",
+      "स": "श",
+      "य": "ष"
+    },
+    "dictionary": "hi",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mr",
+    "label": "MR",
+    "space": "मराठी",
+    "title": "Маратхи",
+    "locale": "mr-IN",
+    "rows": [
+      [
+        "ौ",
+        "ै",
+        "ा",
+        "ी",
+        "ू",
+        "ब",
+        "ह",
+        "ग",
+        "द",
+        "ज",
+        "ड"
+      ],
+      [
+        "ो",
+        "े",
+        "्",
+        "ि",
+        "ु",
+        "प",
+        "र",
+        "क",
+        "त",
+        "च",
+        "ट"
+      ],
+      [
+        "ं",
+        "म",
+        "न",
+        "व",
+        "ल",
+        "स",
+        "य"
+      ]
+    ],
+    "accents": {
+      "र": [
+        "ृ",
+        "ऋ"
+      ],
+      "ल": [
+        "ळ"
+      ]
+    },
+    "shift": {
+      "ौ": "औ",
+      "ै": "ऐ",
+      "ा": "आ",
+      "ी": "ई",
+      "ू": "ऊ",
+      "ब": "भ",
+      "ह": "ङ",
+      "ग": "घ",
+      "द": "ध",
+      "ज": "झ",
+      "ड": "ढ",
+      "ो": "ओ",
+      "े": "ए",
+      "्": "अ",
+      "ि": "इ",
+      "ु": "उ",
+      "प": "फ",
+      "र": "ऱ",
+      "क": "ख",
+      "त": "थ",
+      "च": "छ",
+      "ट": "ठ",
+      "ं": "ँ",
+      "म": "ण",
+      "न": "ञ",
+      "व": "ऋ",
+      "ल": "ळ",
+      "स": "श",
+      "य": "ष"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ne",
+    "label": "NE",
+    "space": "नेपाली",
+    "title": "Непальский",
+    "locale": "ne-NP",
+    "rows": [
+      [
+        "ौ",
+        "ै",
+        "ा",
+        "ी",
+        "ू",
+        "ब",
+        "ह",
+        "ग",
+        "द",
+        "ज",
+        "ड"
+      ],
+      [
+        "ो",
+        "े",
+        "्",
+        "ि",
+        "ु",
+        "प",
+        "र",
+        "क",
+        "त",
+        "च",
+        "ट"
+      ],
+      [
+        "ं",
+        "म",
+        "न",
+        "व",
+        "ल",
+        "स",
+        "य"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ौ": "औ",
+      "ै": "ऐ",
+      "ा": "आ",
+      "ी": "ई",
+      "ू": "ऊ",
+      "ब": "भ",
+      "ह": "ङ",
+      "ग": "घ",
+      "द": "ध",
+      "ज": "झ",
+      "ड": "ढ",
+      "ो": "ओ",
+      "े": "ए",
+      "्": "अ",
+      "ि": "इ",
+      "ु": "उ",
+      "प": "फ",
+      "र": "ऱ",
+      "क": "ख",
+      "त": "थ",
+      "च": "छ",
+      "ट": "ठ",
+      "ं": "ँ",
+      "म": "ण",
+      "न": "ञ",
+      "व": "ऋ",
+      "ल": "ळ",
+      "स": "श",
+      "य": "ष"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "th",
+    "label": "TH",
+    "space": "ไทย",
+    "title": "Тайский",
+    "locale": "th-TH",
+    "rows": [
+      [
+        "ๅ",
+        "ภ",
+        "ถ",
+        "ุ",
+        "ึ",
+        "ค",
+        "ต",
+        "จ",
+        "ข",
+        "ช"
+      ],
+      [
+        "ๆ",
+        "ไ",
+        "ำ",
+        "พ",
+        "ะ",
+        "ั",
+        "ี",
+        "ร",
+        "น",
+        "ย",
+        "บ",
+        "ล",
+        "ฃ"
+      ],
+      [
+        "ฟ",
+        "ห",
+        "ก",
+        "ด",
+        "เ",
+        "้",
+        "่",
+        "า",
+        "ส",
+        "ว",
+        "ง"
+      ],
+      [
+        "ผ",
+        "ป",
+        "แ",
+        "อ",
+        "ิ",
+        "ื",
+        "ท",
+        "ม",
+        "ใ",
+        "ฝ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ๅ": "+",
+      "ภ": "๑",
+      "ถ": "๒",
+      "ุ": "๓",
+      "ึ": "๔",
+      "ค": "ู",
+      "ต": "฿",
+      "จ": "๕",
+      "ข": "๖",
+      "ช": "๗",
+      "ไ": "\"",
+      "ำ": "ฎ",
+      "พ": "ฑ",
+      "ะ": "ธ",
+      "ั": "ํ",
+      "ี": "๊",
+      "ร": "ณ",
+      "น": "ฯ",
+      "ย": "ญ",
+      "บ": "ฐ",
+      "ฃ": "ฅ",
+      "ฟ": "ฤ",
+      "ห": "ฆ",
+      "ก": "ฏ",
+      "ด": "โ",
+      "เ": "ฌ",
+      "้": "็",
+      "่": "๋",
+      "า": "ษ",
+      "ส": "ศ",
+      "ว": "ซ",
+      "ผ": "(",
+      "ป": ")",
+      "แ": "ฉ",
+      "อ": "ฮ",
+      "ิ": "ฺ",
+      "ื": "์",
+      "ม": "ฒ",
+      "ใ": "ฬ",
+      "ฝ": "ฦ"
+    },
+    "dictionary": "th",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "my",
+    "label": "MY",
+    "space": "မြန်မာ",
+    "title": "Бирманский (мьянманский)",
+    "locale": "my-MM",
+    "rows": [
+      [
+        "ဆ",
+        "တ",
+        "န",
+        "မ",
+        "အ",
+        "ပ",
+        "က",
+        "င",
+        "သ",
+        "စ",
+        "ဟ"
+      ],
+      [
+        "ေ",
+        "ျ",
+        "ိ",
+        "်",
+        "ါ",
+        "့",
+        "ြ",
+        "ု",
+        "ူ",
+        "း",
+        "ဒ"
+      ],
+      [
+        "ဖ",
+        "ထ",
+        "ခ",
+        "လ",
+        "ဘ",
+        "ည",
+        "ာ",
+        "ယ",
+        "ရ"
+      ]
+    ],
+    "accents": {
+      "း": [
+        "၊",
+        "။"
+      ],
+      "ဧ": [
+        "၏"
+      ],
+      "ယ": [
+        "၎"
+      ]
+    },
+    "shift": {
+      "ဆ": "ဈ",
+      "တ": "ဝ",
+      "န": "ဣ",
+      "မ": "၎",
+      "အ": "ဤ",
+      "ပ": "၌",
+      "က": "ဥ",
+      "င": "၍",
+      "သ": "ဿ",
+      "စ": "ဏ",
+      "ဟ": "ဧ",
+      "ေ": "ဗ",
+      "ျ": "ှ",
+      "ိ": "ီ",
+      "်": "္",
+      "ါ": "ွ",
+      "့": "ံ",
+      "ြ": "ဲ",
+      "ု": "ဍ",
+      "ူ": "ဓ",
+      "း": "ဂ",
+      "ဒ": "ဎ",
+      "ဖ": "ဇ",
+      "ထ": "ဌ",
+      "ခ": "ဃ",
+      "လ": "ဠ",
+      "ဘ": "ဋ",
+      "ည": "ဉ",
+      "ာ": "ဦ",
+      "ယ": "ဩ",
+      "ရ": "ဪ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "km",
+    "label": "KM",
+    "space": "ខ្មែរ",
+    "title": "Кхмерский",
+    "locale": "km-KH",
+    "rows": [
+      [
+        "ឆ",
+        "ឹ",
+        "េ",
+        "រ",
+        "ត",
+        "យ",
+        "ុ",
+        "ិ",
+        "ោ",
+        "ផ",
+        "ៀ",
+        "ឪ"
+      ],
+      [
+        "ា",
+        "ស",
+        "ដ",
+        "ថ",
+        "ង",
+        "ហ",
+        "្",
+        "ក",
+        "ល",
+        "ើ",
+        "់"
+      ],
+      [
+        "ឋ",
+        "ខ",
+        "ច",
+        "វ",
+        "ប",
+        "ន",
+        "ម",
+        "។",
+        "៊"
+      ]
+    ],
+    "accents": {
+      "អ": [
+        "ឯ",
+        "ឰ",
+        "ឱ",
+        "ឲ",
+        "ឳ"
+      ],
+      "។": [
+        "ៗ",
+        "៕"
+      ]
+    },
+    "shift": {
+      "ឆ": "ឈ",
+      "ឹ": "ឺ",
+      "េ": "ែ",
+      "រ": "ឬ",
+      "ត": "ទ",
+      "យ": "ួ",
+      "ុ": "ូ",
+      "ិ": "ី",
+      "ោ": "ៅ",
+      "ផ": "ភ",
+      "ៀ": "ឿ",
+      "ឪ": "ឧ",
+      "ា": "ាំ",
+      "ស": "ៃ",
+      "ដ": "ឌ",
+      "ថ": "ធ",
+      "ង": "អ",
+      "ហ": "ះ",
+      "្": "ញ",
+      "ក": "គ",
+      "ល": "ឡ",
+      "ើ": "ោះ",
+      "់": "៉",
+      "ឋ": "ឍ",
+      "ខ": "ឃ",
+      "ច": "ជ",
+      "វ": "េះ",
+      "ប": "ព",
+      "ន": "ណ",
+      "ម": "ំ",
+      "។": "៕",
+      "៊": "ុះ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "lo",
+    "label": "LO",
+    "space": "ລາວ",
+    "title": "Лаосский",
+    "locale": "lo-LA",
+    "rows": [
+      [
+        "ຢ",
+        "ຟ",
+        "ໂ",
+        "ຖ",
+        "ຸ",
+        "ູ",
+        "ຄ",
+        "ຕ",
+        "ຈ",
+        "ຂ",
+        "ຊ",
+        "ໍ"
+      ],
+      [
+        "ົ",
+        "ໄ",
+        "ຳ",
+        "ພ",
+        "ະ",
+        "ິ",
+        "ີ",
+        "ຮ",
+        "ນ",
+        "ຍ",
+        "ບ",
+        "ລ"
+      ],
+      [
+        "ັ",
+        "ຫ",
+        "ກ",
+        "ດ",
+        "ເ",
+        "້",
+        "່",
+        "າ",
+        "ສ",
+        "ວ",
+        "ງ"
+      ],
+      [
+        "ຜ",
+        "ປ",
+        "ແ",
+        "ອ",
+        "ຶ",
+        "ື",
+        "ທ",
+        "ມ",
+        "ໃ",
+        "ຝ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ຫ": "ໜ",
+      "ມ": "ໝ",
+      "້": "໊",
+      "່": "໋",
+      "ຍ": "ຽ",
+      "ໃ": "ຼ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "si",
+    "label": "SI",
+    "space": "සිංහල",
+    "title": "Сингальский",
+    "locale": "si-LK",
+    "rows": [
+      [
+        "ු",
+        "අ",
+        "ැ",
+        "ර",
+        "එ",
+        "හ",
+        "ම",
+        "ස",
+        "ද",
+        "ච",
+        "ඤ"
+      ],
+      [
+        "්",
+        "ි",
+        "ා",
+        "ෙ",
+        "ට",
+        "ය",
+        "ව",
+        "න",
+        "ක",
+        "ත"
+      ],
+      [
+        "ං",
+        "ජ",
+        "ඩ",
+        "ඉ",
+        "බ",
+        "ප",
+        "ල",
+        "ග"
+      ]
+    ],
+    "accents": {
+      "අ": [
+        "ආ",
+        "ඇ",
+        "ඈ"
+      ],
+      "එ": [
+        "ඒ",
+        "ඓ"
+      ],
+      "ඔ": [
+        "ඕ",
+        "ඖ"
+      ],
+      "ෙ": [
+        "ෛ",
+        "ො",
+        "ෝ",
+        "ෞ"
+      ],
+      "ද": [
+        "ඳ"
+      ],
+      "ඩ": [
+        "ඬ"
+      ],
+      "ග": [
+        "ඟ"
+      ],
+      "ජ": [
+        "ඦ"
+      ],
+      "ං": [
+        "ඃ"
+      ]
+    },
+    "shift": {
+      "ු": "ූ",
+      "අ": "උ",
+      "ැ": "ෑ",
+      "ර": "ඍ",
+      "එ": "ඔ",
+      "හ": "ශ",
+      "ම": "ඹ",
+      "ස": "ෂ",
+      "ද": "ධ",
+      "ච": "ඡ",
+      "ඤ": "ඥ",
+      "ි": "ී",
+      "ා": "ෘ",
+      "ෙ": "ෆ",
+      "ට": "ඨ",
+      "ය": "්‍ය",
+      "ව": "ළු",
+      "න": "ණ",
+      "ක": "ඛ",
+      "ත": "ථ",
+      "ං": "ඞ",
+      "ජ": "ඣ",
+      "ඩ": "ඪ",
+      "ඉ": "ඊ",
+      "බ": "භ",
+      "ප": "ඵ",
+      "ල": "ළ",
+      "ග": "ඝ"
+    },
+    "dictionary": "si",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ps",
+    "label": "PS",
+    "space": "پښتو",
+    "title": "Пушту",
+    "locale": "ps-AF",
+    "rows": [
+      [
+        "ض",
+        "ص",
+        "ث",
+        "ق",
+        "ف",
+        "غ",
+        "ع",
+        "ه",
+        "خ",
+        "ح",
+        "ج",
+        "چ"
+      ],
+      [
+        "ش",
+        "س",
+        "ی",
+        "ب",
+        "ل",
+        "ا",
+        "ت",
+        "ن",
+        "م",
+        "ک",
+        "ګ"
+      ],
+      [
+        "ظ",
+        "ط",
+        "ز",
+        "ر",
+        "ذ",
+        "د",
+        "پ",
+        "و",
+        "ږ",
+        "ژ"
+      ]
+    ],
+    "accents": {
+      "ت": [
+        "ټ"
+      ],
+      "د": [
+        "ډ"
+      ],
+      "ر": [
+        "ړ"
+      ],
+      "س": [
+        "ښ"
+      ],
+      "ن": [
+        "ڼ"
+      ],
+      "ی": [
+        "ۍ",
+        "ې",
+        "ئ"
+      ],
+      "ج": [
+        "ځ"
+      ],
+      "ح": [
+        "څ"
+      ],
+      "ا": [
+        "آ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "ckb",
+    "label": "CKB",
+    "space": "کوردی",
+    "title": "Курдский (сорани)",
+    "locale": "ckb-IQ",
+    "rows": [
+      [
+        "ق",
+        "و",
+        "ە",
+        "ر",
+        "ت",
+        "ی",
+        "ئ",
+        "ح",
+        "ۆ",
+        "پ",
+        "ع"
+      ],
+      [
+        "ا",
+        "س",
+        "ش",
+        "د",
+        "ف",
+        "گ",
+        "ھ",
+        "ژ",
+        "ک",
+        "ل"
+      ],
+      [
+        "ز",
+        "خ",
+        "ج",
+        "چ",
+        "ڤ",
+        "ب",
+        "ن",
+        "م",
+        "غ"
+      ]
+    ],
+    "accents": {
+      "ر": [
+        "ڕ"
+      ],
+      "ل": [
+        "ڵ"
+      ],
+      "ی": [
+        "ێ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "ug",
+    "label": "UG",
+    "space": "ئۇيغۇرچە",
+    "title": "Уйгурский",
+    "locale": "ug-CN",
+    "rows": [
+      [
+        "چ",
+        "ۋ",
+        "ې",
+        "ر",
+        "ت",
+        "ي",
+        "ۇ",
+        "ڭ",
+        "و",
+        "پ",
+        "ف",
+        "ج"
+      ],
+      [
+        "ھ",
+        "س",
+        "د",
+        "ا",
+        "ە",
+        "ى",
+        "ق",
+        "ك",
+        "ل",
+        "گ",
+        "خ"
+      ],
+      [
+        "ز",
+        "ش",
+        "غ",
+        "ۈ",
+        "ب",
+        "ن",
+        "م",
+        "ۆ",
+        "ژ"
+      ]
+    ],
+    "accents": {
+      "ى": [
+        "ئ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "cv",
+    "label": "CV",
+    "space": "Чӑвашла",
+    "title": "Чувашский",
+    "locale": "cv-RU",
+    "rows": [
+      [
+        "ӑ",
+        "ӗ",
+        "ҫ",
+        "ӳ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sah",
+    "label": "SAH",
+    "space": "Саха тыла",
+    "title": "Якутский",
+    "locale": "sah-RU",
+    "rows": [
+      [
+        "ҕ",
+        "ҥ",
+        "ө",
+        "һ",
+        "ү"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "os",
+    "label": "OS",
+    "space": "Ирон",
+    "title": "Осетинский",
+    "locale": "os-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "а": [
+        "ӕ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ce",
+    "label": "CE",
+    "space": "Нохчийн",
+    "title": "Чеченский",
+    "locale": "ce-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kbd",
+    "label": "KBD",
+    "space": "Адыгэбзэ",
+    "title": "Кабардинский",
+    "locale": "kbd-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "av",
+    "label": "AV",
+    "space": "Магӏарул",
+    "title": "Аварский",
+    "locale": "av-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "udm",
+    "label": "UDM",
+    "space": "Удмурт",
+    "title": "Удмуртский",
+    "locale": "udm-RU",
+    "rows": [
+      [
+        "ӝ",
+        "ӟ",
+        "ӥ",
+        "ӧ",
+        "ӵ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mhr",
+    "label": "MHR",
+    "space": "Марий",
+    "title": "Марийский",
+    "locale": "mhr-RU",
+    "rows": [
+      [
+        "ӓ",
+        "ҥ",
+        "ӧ",
+        "ӱ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kv",
+    "label": "KV",
+    "space": "Коми",
+    "title": "Коми",
+    "locale": "kv-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "и": [
+        "і"
+      ],
+      "о": [
+        "ӧ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bua",
+    "label": "BUA",
+    "space": "Буряад",
+    "title": "Бурятский",
+    "locale": "bua-RU",
+    "rows": [
+      [
+        "ү",
+        "ө",
+        "һ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tyv",
+    "label": "TYV",
+    "space": "Тыва",
+    "title": "Тувинский",
+    "locale": "tyv-RU",
+    "rows": [
+      [
+        "ң",
+        "ө",
+        "ү"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kjh",
+    "label": "KJH",
+    "space": "Хакас",
+    "title": "Хакасский",
+    "locale": "kjh-RU",
+    "rows": [
+      [
+        "і",
+        "ғ",
+        "ң",
+        "ӧ",
+        "ӱ",
+        "ӌ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "crh",
+    "label": "CRH",
+    "space": "Qırımtatar",
+    "title": "Крымскотатарский",
+    "locale": "crh-UA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "ç"
+      ],
+      "g": [
+        "ğ"
+      ],
+      "i": [
+        "ı"
+      ],
+      "n": [
+        "ñ"
+      ],
+      "o": [
+        "ö"
+      ],
+      "s": [
+        "ş"
+      ],
+      "u": [
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "gag",
+    "label": "GAG",
+    "space": "Gagauz",
+    "title": "Гагаузский",
+    "locale": "gag-MD",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ä"
+      ],
+      "e": [
+        "ê"
+      ],
+      "i": [
+        "ı"
+      ],
+      "o": [
+        "ö"
+      ],
+      "s": [
+        "ş"
+      ],
+      "t": [
+        "ţ"
+      ],
+      "u": [
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "oc",
+    "label": "OC",
+    "space": "Occitan",
+    "title": "Окситанский",
+    "locale": "oc-FR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "á"
+      ],
+      "e": [
+        "è",
+        "é"
+      ],
+      "i": [
+        "í",
+        "ï"
+      ],
+      "o": [
+        "ò",
+        "ó"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ],
+      "c": [
+        "ç"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "co",
+    "label": "CO",
+    "space": "Corsu",
+    "title": "Корсиканский",
+    "locale": "co-FR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ast",
+    "label": "AST",
+    "space": "Asturianu",
+    "title": "Астурийский",
+    "locale": "ast-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ],
+      "h": [
+        "ḥ"
+      ],
+      "l": [
+        "ḷ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "rm",
+    "label": "RM",
+    "space": "Rumantsch",
+    "title": "Романшский",
+    "locale": "rm-CH",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "ä"
+      ],
+      "e": [
+        "è",
+        "é",
+        "ë"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò",
+        "ö"
+      ],
+      "u": [
+        "ù",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sc",
+    "label": "SC",
+    "space": "Sardu",
+    "title": "Сардинский",
+    "locale": "sc-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "rw",
+    "label": "RW",
+    "space": "Kinyarwanda",
+    "title": "Киньяруанда",
+    "locale": "rw-RW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sn",
+    "label": "SN",
+    "space": "chiShona",
+    "title": "Шона",
+    "locale": "sn-ZW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ny",
+    "label": "NY",
+    "space": "Chichewa",
+    "title": "Чева (ньянджа)",
+    "locale": "ny-MW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "w": [
+        "ŵ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "st",
+    "label": "ST",
+    "space": "Sesotho",
+    "title": "Сесото",
+    "locale": "st-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tn",
+    "label": "TN",
+    "space": "Setswana",
+    "title": "Тсвана",
+    "locale": "tn-BW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ê"
+      ],
+      "o": [
+        "ô"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ig",
+    "label": "IG",
+    "space": "Igbo",
+    "title": "Игбо",
+    "locale": "ig-NG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "i": [
+        "ị"
+      ],
+      "o": [
+        "ọ"
+      ],
+      "u": [
+        "ụ"
+      ],
+      "n": [
+        "ṅ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "om",
+    "label": "OM",
+    "space": "Afaan Oromoo",
+    "title": "Оромо",
+    "locale": "om-ET",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ln",
+    "label": "LN",
+    "space": "Lingála",
+    "title": "Лингала",
+    "locale": "ln-CD",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ɛ",
+        "é"
+      ],
+      "o": [
+        "ɔ",
+        "ó"
+      ],
+      "a": [
+        "á"
+      ],
+      "i": [
+        "í"
+      ],
+      "u": [
+        "ú"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ak",
+    "label": "AK",
+    "space": "Twi",
+    "title": "Тви (акан)",
+    "locale": "ak-GH",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ɛ"
+      ],
+      "o": [
+        "ɔ"
+      ],
+      "n": [
+        "ŋ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ee",
+    "label": "EE",
+    "space": "Eʋegbe",
+    "title": "Эве",
+    "locale": "ee-GH",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "d": [
+        "ɖ"
+      ],
+      "f": [
+        "ƒ"
+      ],
+      "g": [
+        "ɣ"
+      ],
+      "v": [
+        "ʋ"
+      ],
+      "e": [
+        "ɛ"
+      ],
+      "o": [
+        "ɔ"
+      ],
+      "n": [
+        "ŋ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ff",
+    "label": "FF",
+    "space": "Pulaar",
+    "title": "Фула",
+    "locale": "ff-SN",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "b": [
+        "ɓ"
+      ],
+      "d": [
+        "ɗ"
+      ],
+      "n": [
+        "ŋ",
+        "ñ"
+      ],
+      "y": [
+        "ƴ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bm",
+    "label": "BM",
+    "space": "Bamanankan",
+    "title": "Бамбара",
+    "locale": "bm-ML",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ɛ"
+      ],
+      "o": [
+        "ɔ"
+      ],
+      "n": [
+        "ɲ",
+        "ŋ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "wo",
+    "label": "WO",
+    "space": "Wolof",
+    "title": "Волоф",
+    "locale": "wo-SN",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "é",
+        "ë"
+      ],
+      "o": [
+        "ó"
+      ],
+      "n": [
+        "ñ",
+        "ŋ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kab",
+    "label": "KAB",
+    "space": "Taqbaylit",
+    "title": "Кабильский",
+    "locale": "kab-DZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "č"
+      ],
+      "d": [
+        "ḍ"
+      ],
+      "g": [
+        "ǧ",
+        "ɣ"
+      ],
+      "h": [
+        "ḥ"
+      ],
+      "r": [
+        "ṛ"
+      ],
+      "s": [
+        "ṣ"
+      ],
+      "t": [
+        "ṭ"
+      ],
+      "z": [
+        "ẓ"
+      ],
+      "e": [
+        "ɛ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "hmn",
+    "label": "HMN",
+    "space": "Hmoob",
+    "title": "Хмонг",
+    "locale": "hmn",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sm",
+    "label": "SM",
+    "space": "Gagana Samoa",
+    "title": "Самоанский",
+    "locale": "sm-WS",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "to",
+    "label": "TO",
+    "space": "Lea faka-Tonga",
+    "title": "Тонганский",
+    "locale": "to-TO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fj",
+    "label": "FJ",
+    "space": "Vosa Vakaviti",
+    "title": "Фиджийский",
+    "locale": "fj-FJ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "qu",
+    "label": "QU",
+    "space": "Runa Simi",
+    "title": "Кечуа",
+    "locale": "qu-PE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "gn",
+    "label": "GN",
+    "space": "Avañeʼẽ",
+    "title": "Гуарани",
+    "locale": "gn-PY",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ʼ"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ã"
+      ],
+      "e": [
+        "ẽ"
+      ],
+      "i": [
+        "ĩ"
+      ],
+      "o": [
+        "õ"
+      ],
+      "u": [
+        "ũ"
+      ],
+      "y": [
+        "ỹ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bn",
+    "label": "BN",
+    "space": "বাংলা",
+    "title": "Бенгальский",
+    "locale": "bn-IN",
+    "rows": [
+      [
+        "ৌ",
+        "ৈ",
+        "া",
+        "ী",
+        "ূ",
+        "ব",
+        "হ",
+        "গ",
+        "দ",
+        "জ",
+        "ড"
+      ],
+      [
+        "ো",
+        "ে",
+        "্",
+        "ি",
+        "ু",
+        "প",
+        "র",
+        "ক",
+        "ত",
+        "চ",
+        "ট"
+      ],
+      [
+        "ং",
+        "ম",
+        "ন",
+        "ল",
+        "স",
+        "য"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ৌ": "ঔ",
+      "ৈ": "ঐ",
+      "া": "আ",
+      "ী": "ঈ",
+      "ূ": "ঊ",
+      "ব": "ভ",
+      "হ": "ঙ",
+      "গ": "ঘ",
+      "দ": "ধ",
+      "জ": "ঝ",
+      "ড": "ঢ",
+      "ো": "ও",
+      "ে": "এ",
+      "্": "অ",
+      "ি": "ই",
+      "ু": "উ",
+      "প": "ফ",
+      "ক": "খ",
+      "ত": "থ",
+      "চ": "ছ",
+      "ট": "ঠ",
+      "ং": "ঁ",
+      "ম": "ণ",
+      "ন": "ঞ",
+      "স": "শ",
+      "য": "ষ"
+    },
+    "dictionary": "bn",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bn-bd",
+    "label": "BD",
+    "space": "বাংলা (বাংলাদেশ)",
+    "title": "Бенгальский (Бангладеш)",
+    "locale": "bn-BD",
+    "rows": [
+      [
+        "ৌ",
+        "ৈ",
+        "া",
+        "ী",
+        "ূ",
+        "ব",
+        "হ",
+        "গ",
+        "দ",
+        "জ",
+        "ড"
+      ],
+      [
+        "ো",
+        "ে",
+        "্",
+        "ি",
+        "ু",
+        "প",
+        "র",
+        "ক",
+        "ত",
+        "চ",
+        "ট"
+      ],
+      [
+        "ং",
+        "ম",
+        "ন",
+        "ল",
+        "স",
+        "য"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ৌ": "ঔ",
+      "ৈ": "ঐ",
+      "া": "আ",
+      "ী": "ঈ",
+      "ূ": "ঊ",
+      "ব": "ভ",
+      "হ": "ঙ",
+      "গ": "ঘ",
+      "দ": "ধ",
+      "জ": "ঝ",
+      "ড": "ঢ",
+      "ো": "ও",
+      "ে": "এ",
+      "্": "অ",
+      "ি": "ই",
+      "ু": "উ",
+      "প": "ফ",
+      "ক": "খ",
+      "ত": "থ",
+      "চ": "ছ",
+      "ট": "ঠ",
+      "ং": "ঁ",
+      "ম": "ণ",
+      "ন": "ঞ",
+      "স": "শ",
+      "য": "ষ"
+    },
+    "dictionary": "bn",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "pa",
+    "label": "PA",
+    "space": "ਪੰਜਾਬੀ",
+    "title": "Панджаби",
+    "locale": "pa-IN",
+    "rows": [
+      [
+        "ੌ",
+        "ੈ",
+        "ਾ",
+        "ੀ",
+        "ੂ",
+        "ਬ",
+        "ਹ",
+        "ਗ",
+        "ਦ",
+        "ਜ",
+        "ਡ"
+      ],
+      [
+        "ੋ",
+        "ੇ",
+        "੍",
+        "ਿ",
+        "ੁ",
+        "ਪ",
+        "ਰ",
+        "ਕ",
+        "ਤ",
+        "ਚ",
+        "ਟ"
+      ],
+      [
+        "ਂ",
+        "ਮ",
+        "ਨ",
+        "ਵ",
+        "ਲ",
+        "ਸ",
+        "ਯ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ੌ": "ਔ",
+      "ੈ": "ਐ",
+      "ਾ": "ਆ",
+      "ੀ": "ਈ",
+      "ੂ": "ਊ",
+      "ਬ": "ਭ",
+      "ਹ": "ਙ",
+      "ਗ": "ਘ",
+      "ਦ": "ਧ",
+      "ਜ": "ਝ",
+      "ਡ": "ਢ",
+      "ੋ": "ਓ",
+      "ੇ": "ਏ",
+      "੍": "ਅ",
+      "ਿ": "ਇ",
+      "ੁ": "ਉ",
+      "ਪ": "ਫ",
+      "ਕ": "ਖ",
+      "ਤ": "ਥ",
+      "ਚ": "ਛ",
+      "ਟ": "ਠ",
+      "ਂ": "ਁ",
+      "ਮ": "ਣ",
+      "ਨ": "ਞ",
+      "ਲ": "ਲ਼",
+      "ਸ": "ਸ਼"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "gu",
+    "label": "GU",
+    "space": "ગુજરાતી",
+    "title": "Гуджарати",
+    "locale": "gu-IN",
+    "rows": [
+      [
+        "ૌ",
+        "ૈ",
+        "ા",
+        "ી",
+        "ૂ",
+        "બ",
+        "હ",
+        "ગ",
+        "દ",
+        "જ",
+        "ડ"
+      ],
+      [
+        "ો",
+        "ે",
+        "્",
+        "િ",
+        "ુ",
+        "પ",
+        "ર",
+        "ક",
+        "ત",
+        "ચ",
+        "ટ"
+      ],
+      [
+        "ં",
+        "મ",
+        "ન",
+        "વ",
+        "લ",
+        "સ",
+        "ય"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ૌ": "ઔ",
+      "ૈ": "ઐ",
+      "ા": "આ",
+      "ી": "ઈ",
+      "ૂ": "ઊ",
+      "બ": "ભ",
+      "હ": "ઙ",
+      "ગ": "ઘ",
+      "દ": "ધ",
+      "જ": "ઝ",
+      "ડ": "ઢ",
+      "ો": "ઓ",
+      "ે": "એ",
+      "્": "અ",
+      "િ": "ઇ",
+      "ુ": "ઉ",
+      "પ": "ફ",
+      "ક": "ખ",
+      "ત": "થ",
+      "ચ": "છ",
+      "ટ": "ઠ",
+      "ં": "ઁ",
+      "મ": "ણ",
+      "ન": "ઞ",
+      "વ": "ઋ",
+      "લ": "ળ",
+      "સ": "શ",
+      "ય": "ષ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "or",
+    "label": "OR",
+    "space": "ଓଡ଼ିଆ",
+    "title": "Ория",
+    "locale": "or-IN",
+    "rows": [
+      [
+        "ୌ",
+        "ୈ",
+        "ା",
+        "ୀ",
+        "ୂ",
+        "ବ",
+        "ହ",
+        "ଗ",
+        "ଦ",
+        "ଜ",
+        "ଡ"
+      ],
+      [
+        "ୋ",
+        "େ",
+        "୍",
+        "ି",
+        "ୁ",
+        "ପ",
+        "ର",
+        "କ",
+        "ତ",
+        "ଚ",
+        "ଟ"
+      ],
+      [
+        "ଂ",
+        "ମ",
+        "ନ",
+        "ଵ",
+        "ଲ",
+        "ସ",
+        "ଯ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ୌ": "ଔ",
+      "ୈ": "ଐ",
+      "ା": "ଆ",
+      "ୀ": "ଈ",
+      "ୂ": "ଊ",
+      "ବ": "ଭ",
+      "ହ": "ଙ",
+      "ଗ": "ଘ",
+      "ଦ": "ଧ",
+      "ଜ": "ଝ",
+      "ଡ": "ଢ",
+      "ୋ": "ଓ",
+      "େ": "ଏ",
+      "୍": "ଅ",
+      "ି": "ଇ",
+      "ୁ": "ଉ",
+      "ପ": "ଫ",
+      "କ": "ଖ",
+      "ତ": "ଥ",
+      "ଚ": "ଛ",
+      "ଟ": "ଠ",
+      "ଂ": "ଁ",
+      "ମ": "ଣ",
+      "ନ": "ଞ",
+      "ଵ": "ଋ",
+      "ଲ": "ଳ",
+      "ସ": "ଶ",
+      "ଯ": "ଷ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ta",
+    "label": "TA",
+    "space": "தமிழ்",
+    "title": "Тамильский",
+    "locale": "ta-IN",
+    "rows": [
+      [
+        "ௌ",
+        "ை",
+        "ா",
+        "ீ",
+        "ூ",
+        "ஹ",
+        "ஜ"
+      ],
+      [
+        "ோ",
+        "ே",
+        "்",
+        "ி",
+        "ு",
+        "ப",
+        "ர",
+        "க",
+        "த",
+        "ச",
+        "ட"
+      ],
+      [
+        "ஂ",
+        "ம",
+        "ந",
+        "வ",
+        "ல",
+        "ஸ",
+        "ய"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ௌ": "ஔ",
+      "ை": "ஐ",
+      "ா": "ஆ",
+      "ீ": "ஈ",
+      "ூ": "ஊ",
+      "ஹ": "ங",
+      "ோ": "ஓ",
+      "ே": "ஏ",
+      "்": "அ",
+      "ி": "இ",
+      "ு": "உ",
+      "ர": "ற",
+      "ம": "ண",
+      "ந": "ஞ",
+      "ல": "ள",
+      "ஸ": "ஶ",
+      "ய": "ஷ"
+    },
+    "dictionary": "ta",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "te",
+    "label": "TE",
+    "space": "తెలుగు",
+    "title": "Телугу",
+    "locale": "te-IN",
+    "rows": [
+      [
+        "ౌ",
+        "ై",
+        "ా",
+        "ీ",
+        "ూ",
+        "బ",
+        "హ",
+        "గ",
+        "ద",
+        "జ",
+        "డ"
+      ],
+      [
+        "ో",
+        "ే",
+        "్",
+        "ి",
+        "ు",
+        "ప",
+        "ర",
+        "క",
+        "త",
+        "చ",
+        "ట"
+      ],
+      [
+        "ం",
+        "మ",
+        "న",
+        "వ",
+        "ల",
+        "స",
+        "య"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ౌ": "ఔ",
+      "ై": "ఐ",
+      "ా": "ఆ",
+      "ీ": "ఈ",
+      "ూ": "ఊ",
+      "బ": "భ",
+      "హ": "ఙ",
+      "గ": "ఘ",
+      "ద": "ధ",
+      "జ": "ఝ",
+      "డ": "ఢ",
+      "ో": "ఓ",
+      "ే": "ఏ",
+      "్": "అ",
+      "ి": "ఇ",
+      "ు": "ఉ",
+      "ప": "ఫ",
+      "ర": "ఱ",
+      "క": "ఖ",
+      "త": "థ",
+      "చ": "ఛ",
+      "ట": "ఠ",
+      "ం": "ఁ",
+      "మ": "ణ",
+      "న": "ఞ",
+      "వ": "ఋ",
+      "ల": "ళ",
+      "స": "శ",
+      "య": "ష"
+    },
+    "dictionary": "te",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kn",
+    "label": "KN",
+    "space": "ಕನ್ನಡ",
+    "title": "Каннада",
+    "locale": "kn-IN",
+    "rows": [
+      [
+        "ೌ",
+        "ೈ",
+        "ಾ",
+        "ೀ",
+        "ೂ",
+        "ಬ",
+        "ಹ",
+        "ಗ",
+        "ದ",
+        "ಜ",
+        "ಡ"
+      ],
+      [
+        "ೋ",
+        "ೇ",
+        "್",
+        "ಿ",
+        "ು",
+        "ಪ",
+        "ರ",
+        "ಕ",
+        "ತ",
+        "ಚ",
+        "ಟ"
+      ],
+      [
+        "ಂ",
+        "ಮ",
+        "ನ",
+        "ವ",
+        "ಲ",
+        "ಸ",
+        "ಯ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ೌ": "ಔ",
+      "ೈ": "ಐ",
+      "ಾ": "ಆ",
+      "ೀ": "ಈ",
+      "ೂ": "ಊ",
+      "ಬ": "ಭ",
+      "ಹ": "ಙ",
+      "ಗ": "ಘ",
+      "ದ": "ಧ",
+      "ಜ": "ಝ",
+      "ಡ": "ಢ",
+      "ೋ": "ಓ",
+      "ೇ": "ಏ",
+      "್": "ಅ",
+      "ಿ": "ಇ",
+      "ು": "ಉ",
+      "ಪ": "ಫ",
+      "ರ": "ಱ",
+      "ಕ": "ಖ",
+      "ತ": "ಥ",
+      "ಚ": "ಛ",
+      "ಟ": "ಠ",
+      "ಂ": "ಁ",
+      "ಮ": "ಣ",
+      "ನ": "ಞ",
+      "ವ": "ಋ",
+      "ಲ": "ಳ",
+      "ಸ": "ಶ",
+      "ಯ": "ಷ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ml",
+    "label": "ML",
+    "space": "മലയാളം",
+    "title": "Малаялам",
+    "locale": "ml-IN",
+    "rows": [
+      [
+        "ൌ",
+        "ൈ",
+        "ാ",
+        "ീ",
+        "ൂ",
+        "ബ",
+        "ഹ",
+        "ഗ",
+        "ദ",
+        "ജ",
+        "ഡ"
+      ],
+      [
+        "ോ",
+        "േ",
+        "്",
+        "ി",
+        "ു",
+        "പ",
+        "ര",
+        "ക",
+        "ത",
+        "ച",
+        "ട"
+      ],
+      [
+        "ം",
+        "മ",
+        "ന",
+        "വ",
+        "ല",
+        "സ",
+        "യ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ൌ": "ഔ",
+      "ൈ": "ഐ",
+      "ാ": "ആ",
+      "ീ": "ഈ",
+      "ൂ": "ഊ",
+      "ബ": "ഭ",
+      "ഹ": "ങ",
+      "ഗ": "ഘ",
+      "ദ": "ധ",
+      "ജ": "ഝ",
+      "ഡ": "ഢ",
+      "ോ": "ഓ",
+      "േ": "ഏ",
+      "്": "അ",
+      "ി": "ഇ",
+      "ു": "ഉ",
+      "പ": "ഫ",
+      "ര": "റ",
+      "ക": "ഖ",
+      "ത": "ഥ",
+      "ച": "ഛ",
+      "ട": "ഠ",
+      "ം": "ഁ",
+      "മ": "ണ",
+      "ന": "ഞ",
+      "വ": "ഋ",
+      "ല": "ള",
+      "സ": "ശ",
+      "യ": "ഷ"
+    },
+    "dictionary": "ml",
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "zh",
+    "label": "中",
+    "space": "中文 · 拼音",
+    "title": "Китайский (пиньинь)",
+    "locale": "zh-CN",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "pinyin",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "zh-tw",
+    "label": "繁",
+    "space": "中文 · 繁體",
+    "title": "Китайский традиционный (пиньинь)",
+    "locale": "zh-TW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "pinyin",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "ja",
+    "label": "あ",
+    "space": "日本語",
+    "title": "Японский (ромадзи → кана)",
+    "locale": "ja-JP",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "kana",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "br",
+    "label": "BR",
+    "space": "Brezhoneg",
+    "title": "Бретонский",
+    "locale": "br-FR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ê"
+      ],
+      "u": [
+        "ù",
+        "ü"
+      ],
+      "n": [
+        "ñ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "br",
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "la",
+    "label": "LA",
+    "space": "Latina",
+    "title": "Латынь",
+    "locale": "la",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lb",
+    "label": "LB",
+    "space": "Lëtzebuergesch",
+    "title": "Люксембургский",
+    "locale": "lb-LU",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é",
+        "ë",
+        "è"
+      ],
+      "a": [
+        "ä"
+      ],
+      "u": [
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fy",
+    "label": "FY",
+    "space": "Frysk",
+    "title": "Фризский",
+    "locale": "fy-NL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "â"
+      ],
+      "e": [
+        "ê",
+        "é"
+      ],
+      "o": [
+        "ô"
+      ],
+      "u": [
+        "û",
+        "ú"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fo",
+    "label": "FO",
+    "space": "Føroyskt",
+    "title": "Фарерский",
+    "locale": "fo-FO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "æ",
+        "ø"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ð"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú"
+      ],
+      "y": [
+        "ý"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "gd",
+    "label": "GD",
+    "space": "Gàidhlig",
+    "title": "Шотландский гэльский",
+    "locale": "gd-GB",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ht",
+    "label": "HT",
+    "space": "Kreyòl",
+    "title": "Гаитянский креольский",
+    "locale": "ht-HT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è"
+      ],
+      "o": [
+        "ò"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mi",
+    "label": "MI",
+    "space": "Māori",
+    "title": "Маори",
+    "locale": "mi-NZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "haw",
+    "label": "HAW",
+    "space": "ʻŌlelo Hawaiʻi",
+    "title": "Гавайский",
+    "locale": "haw-US",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "so",
+    "label": "SO",
+    "space": "Soomaali",
+    "title": "Сомали",
+    "locale": "so-SO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "yo",
+    "label": "YO",
+    "space": "Yorùbá",
+    "title": "Йоруба",
+    "locale": "yo-NG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ẹ",
+        "é",
+        "è"
+      ],
+      "o": [
+        "ọ",
+        "ó",
+        "ò"
+      ],
+      "s": [
+        "ṣ"
+      ],
+      "a": [
+        "á",
+        "à"
+      ],
+      "i": [
+        "í",
+        "ì"
+      ],
+      "u": [
+        "ú",
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ha",
+    "label": "HA",
+    "space": "Hausa",
+    "title": "Хауса",
+    "locale": "ha-NG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "b": [
+        "ɓ"
+      ],
+      "d": [
+        "ɗ"
+      ],
+      "k": [
+        "ƙ"
+      ],
+      "y": [
+        "ƴ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "zu",
+    "label": "ZU",
+    "space": "isiZulu",
+    "title": "Зулу",
+    "locale": "zu-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "xh",
+    "label": "XH",
+    "space": "isiXhosa",
+    "title": "Коса",
+    "locale": "xh-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "jv",
+    "label": "JV",
+    "space": "Jawa",
+    "title": "Яванский",
+    "locale": "jv-ID",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é",
+        "è"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "su",
+    "label": "SU",
+    "space": "Sunda",
+    "title": "Сунданский",
+    "locale": "su-ID",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "é"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ceb",
+    "label": "CEB",
+    "space": "Cebuano",
+    "title": "Себуанский",
+    "locale": "ceb-PH",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mg",
+    "label": "MG",
+    "space": "Malagasy",
+    "title": "Малагасийский",
+    "locale": "mg-MG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "o": [
+        "ô"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tk",
+    "label": "TK",
+    "space": "Türkmen",
+    "title": "Туркменский",
+    "locale": "tk-TM",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "ň",
+        "ä"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ş",
+        "ü"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "ç",
+        "ö",
+        "ý"
+      ]
+    ],
+    "accents": {
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ku",
+    "label": "KU",
+    "space": "Kurdî",
+    "title": "Курдский (курманджи)",
+    "locale": "ku-TR",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ê"
+      ],
+      "i": [
+        "î"
+      ],
+      "u": [
+        "û"
+      ],
+      "c": [
+        "ç"
+      ],
+      "s": [
+        "ş"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "am",
+    "label": "AM",
+    "space": "አማርኛ",
+    "title": "Амхарский",
+    "locale": "am-ET",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "h": [
+        "ህ",
+        "ሕ"
+      ],
+      "l": [
+        "ል"
+      ],
+      "m": [
+        "ም"
+      ],
+      "r": [
+        "ር"
+      ],
+      "s": [
+        "ስ",
+        "ሽ",
+        "ጽ"
+      ],
+      "x": [
+        "ሽ"
+      ],
+      "q": [
+        "ቅ"
+      ],
+      "b": [
+        "ብ"
+      ],
+      "v": [
+        "ቭ"
+      ],
+      "t": [
+        "ት",
+        "ጥ"
+      ],
+      "c": [
+        "ች",
+        "ጭ"
+      ],
+      "n": [
+        "ን",
+        "ኝ"
+      ],
+      "k": [
+        "ክ"
+      ],
+      "w": [
+        "ው"
+      ],
+      "z": [
+        "ዝ",
+        "ዥ"
+      ],
+      "y": [
+        "ይ"
+      ],
+      "d": [
+        "ድ"
+      ],
+      "j": [
+        "ጅ"
+      ],
+      "g": [
+        "ግ"
+      ],
+      "f": [
+        "ፍ"
+      ],
+      "p": [
+        "ፕ",
+        "ጵ"
+      ],
+      "a": [
+        "አ"
+      ],
+      "u": [
+        "ኡ"
+      ],
+      "i": [
+        "ኢ"
+      ],
+      "e": [
+        "እ",
+        "ኤ"
+      ],
+      "o": [
+        "ኦ"
+      ]
+    },
+    "shift": {},
+    "dictionary": "am",
+    "hasCase": false,
+    "composer": "ethiopic",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "ti",
+    "label": "TI",
+    "space": "ትግርኛ",
+    "title": "Тигринья",
+    "locale": "ti-ER",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "h": [
+        "ህ",
+        "ሕ"
+      ],
+      "l": [
+        "ል"
+      ],
+      "m": [
+        "ም"
+      ],
+      "r": [
+        "ር"
+      ],
+      "s": [
+        "ስ",
+        "ሽ",
+        "ጽ"
+      ],
+      "x": [
+        "ሽ"
+      ],
+      "q": [
+        "ቅ"
+      ],
+      "b": [
+        "ብ"
+      ],
+      "v": [
+        "ቭ"
+      ],
+      "t": [
+        "ት",
+        "ጥ"
+      ],
+      "c": [
+        "ች",
+        "ጭ"
+      ],
+      "n": [
+        "ን",
+        "ኝ"
+      ],
+      "k": [
+        "ክ"
+      ],
+      "w": [
+        "ው"
+      ],
+      "z": [
+        "ዝ",
+        "ዥ"
+      ],
+      "y": [
+        "ይ"
+      ],
+      "d": [
+        "ድ"
+      ],
+      "j": [
+        "ጅ"
+      ],
+      "g": [
+        "ግ"
+      ],
+      "f": [
+        "ፍ"
+      ],
+      "p": [
+        "ፕ",
+        "ጵ"
+      ],
+      "a": [
+        "አ"
+      ],
+      "u": [
+        "ኡ"
+      ],
+      "i": [
+        "ኢ"
+      ],
+      "e": [
+        "እ",
+        "ኤ"
+      ],
+      "o": [
+        "ኦ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "ethiopic",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "myv",
+    "label": "MYV",
+    "space": "Эрзянь",
+    "title": "Эрзянский",
+    "locale": "myv-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mdf",
+    "label": "MDF",
+    "space": "Мокшень",
+    "title": "Мокшанский",
+    "locale": "mdf-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "а": [
+        "ӓ"
+      ],
+      "ы": [
+        "ә"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "xal",
+    "label": "XAL",
+    "space": "Хальмг",
+    "title": "Калмыцкий",
+    "locale": "xal-RU",
+    "rows": [
+      [
+        "ә",
+        "җ",
+        "ң",
+        "ө",
+        "ү",
+        "һ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "alt",
+    "label": "ALT",
+    "space": "Алтай",
+    "title": "Алтайский",
+    "locale": "alt-RU",
+    "rows": [
+      [
+        "ј",
+        "ҥ",
+        "ӧ",
+        "ӱ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "krc",
+    "label": "KRC",
+    "space": "Къарачай-Малкъар",
+    "title": "Карачаево-балкарский",
+    "locale": "krc-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "у": [
+        "ў"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kum",
+    "label": "KUM",
+    "space": "Къумукъ",
+    "title": "Кумыкский",
+    "locale": "kum-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "nog",
+    "label": "NOG",
+    "space": "Ногай",
+    "title": "Ногайский",
+    "locale": "nog-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {
+      "а": [
+        "ӓ"
+      ],
+      "о": [
+        "ӧ"
+      ],
+      "у": [
+        "ӱ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ady",
+    "label": "ADY",
+    "space": "Адыгабзэ",
+    "title": "Адыгейский",
+    "locale": "ady-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "inh",
+    "label": "INH",
+    "space": "Гӏалгӏай",
+    "title": "Ингушский",
+    "locale": "inh-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lez",
+    "label": "LEZ",
+    "space": "Лезги",
+    "title": "Лезгинский",
+    "locale": "lez-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "dar",
+    "label": "DAR",
+    "space": "Дарган",
+    "title": "Даргинский",
+    "locale": "dar-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lbe",
+    "label": "LBE",
+    "space": "Лакку",
+    "title": "Лакский",
+    "locale": "lbe-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tab",
+    "label": "TAB",
+    "space": "Табасаран",
+    "title": "Табасаранский",
+    "locale": "tab-RU",
+    "rows": [
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ӏ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ё"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ab",
+    "label": "AB",
+    "space": "Аԥсуа",
+    "title": "Абхазский",
+    "locale": "ab-GE",
+    "rows": [
+      [
+        "ҕ",
+        "ҙ",
+        "ҟ",
+        "ҭ",
+        "ҳ",
+        "ҷ",
+        "ҽ",
+        "ҿ"
+      ],
+      [
+        "й",
+        "ц",
+        "у",
+        "к",
+        "е",
+        "н",
+        "г",
+        "ш",
+        "щ",
+        "з",
+        "х",
+        "ъ"
+      ],
+      [
+        "ф",
+        "ы",
+        "в",
+        "а",
+        "п",
+        "р",
+        "о",
+        "л",
+        "д",
+        "ж",
+        "э",
+        "ԥ"
+      ],
+      [
+        "я",
+        "ч",
+        "с",
+        "м",
+        "и",
+        "т",
+        "ь",
+        "б",
+        "ю",
+        "ә"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kaa",
+    "label": "KAA",
+    "space": "Qaraqalpaq",
+    "title": "Каракалпакский",
+    "locale": "kaa-UZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "g": [
+        "ǵ"
+      ],
+      "i": [
+        "ı"
+      ],
+      "n": [
+        "ń"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "hsb",
+    "label": "HSB",
+    "space": "Hornjoserbšćina",
+    "title": "Верхнелужицкий",
+    "locale": "hsb-DE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "č",
+        "ć"
+      ],
+      "e": [
+        "ě"
+      ],
+      "l": [
+        "ł"
+      ],
+      "n": [
+        "ń"
+      ],
+      "o": [
+        "ó"
+      ],
+      "r": [
+        "ř"
+      ],
+      "s": [
+        "š"
+      ],
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "dsb",
+    "label": "DSB",
+    "space": "Dolnoserbšćina",
+    "title": "Нижнелужицкий",
+    "locale": "dsb-DE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "z",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "y",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "c": [
+        "č",
+        "ć"
+      ],
+      "e": [
+        "ě"
+      ],
+      "l": [
+        "ł"
+      ],
+      "n": [
+        "ń"
+      ],
+      "o": [
+        "ó"
+      ],
+      "r": [
+        "ŕ"
+      ],
+      "s": [
+        "š",
+        "ś"
+      ],
+      "z": [
+        "ž",
+        "ź"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "szl",
+    "label": "SZL",
+    "space": "Ślōnsko",
+    "title": "Силезский",
+    "locale": "szl-PL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ã"
+      ],
+      "o": [
+        "ō",
+        "ô",
+        "õ",
+        "ŏ"
+      ],
+      "u": [
+        "ů"
+      ],
+      "c": [
+        "ć"
+      ],
+      "l": [
+        "ł"
+      ],
+      "n": [
+        "ń"
+      ],
+      "s": [
+        "ś"
+      ],
+      "z": [
+        "ż",
+        "ź"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "csb",
+    "label": "CSB",
+    "space": "Kaszëbsczi",
+    "title": "Кашубский",
+    "locale": "csb-PL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ą",
+        "ã"
+      ],
+      "e": [
+        "é",
+        "ë"
+      ],
+      "o": [
+        "ò",
+        "ó",
+        "ô"
+      ],
+      "u": [
+        "ù"
+      ],
+      "l": [
+        "ł"
+      ],
+      "n": [
+        "ń"
+      ],
+      "z": [
+        "ż"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "se",
+    "label": "SE",
+    "space": "Davvisámegiella",
+    "title": "Северносаамский",
+    "locale": "se-NO",
+    "rows": [
+      [
+        "á",
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ö",
+        "ä"
+      ],
+      [
+        "z",
+        "č",
+        "ŧ",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m",
+        "đ",
+        "ŋ",
+        "š"
+      ]
+    ],
+    "accents": {
+      "z": [
+        "ž"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kl",
+    "label": "KL",
+    "space": "Kalaallisut",
+    "title": "Гренландский",
+    "locale": "kl-GL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p",
+        "å"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "æ",
+        "ø"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "wa",
+    "label": "WA",
+    "space": "Walon",
+    "title": "Валлонский",
+    "locale": "wa-BE",
+    "rows": [
+      [
+        "a",
+        "z",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "q",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "m"
+      ],
+      [
+        "w",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "â",
+        "å"
+      ],
+      "e": [
+        "è",
+        "é",
+        "ê",
+        "ë"
+      ],
+      "i": [
+        "î"
+      ],
+      "o": [
+        "ô"
+      ],
+      "u": [
+        "û"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "li",
+    "label": "LI",
+    "space": "Limburgs",
+    "title": "Лимбургский",
+    "locale": "li-NL",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "è",
+        "é",
+        "ë"
+      ],
+      "o": [
+        "ó"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "scn",
+    "label": "SCN",
+    "space": "Sicilianu",
+    "title": "Сицилийский",
+    "locale": "scn-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "â"
+      ],
+      "e": [
+        "è",
+        "ê"
+      ],
+      "i": [
+        "ì",
+        "î"
+      ],
+      "o": [
+        "ò",
+        "ô"
+      ],
+      "u": [
+        "ù",
+        "û"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "vec",
+    "label": "VEC",
+    "space": "Vèneto",
+    "title": "Венетский",
+    "locale": "vec-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à"
+      ],
+      "e": [
+        "è",
+        "é"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò",
+        "ó"
+      ],
+      "u": [
+        "ù"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "fur",
+    "label": "FUR",
+    "space": "Furlan",
+    "title": "Фриульский",
+    "locale": "fur-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "â"
+      ],
+      "e": [
+        "è",
+        "ê"
+      ],
+      "i": [
+        "ì",
+        "î"
+      ],
+      "o": [
+        "ò",
+        "ô"
+      ],
+      "u": [
+        "ù",
+        "û"
+      ],
+      "c": [
+        "ç"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lij",
+    "label": "LIJ",
+    "space": "Lìgure",
+    "title": "Лигурский",
+    "locale": "lij-IT",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "à",
+        "â"
+      ],
+      "e": [
+        "è",
+        "é",
+        "ê"
+      ],
+      "i": [
+        "ì"
+      ],
+      "o": [
+        "ò",
+        "ó",
+        "ô"
+      ],
+      "u": [
+        "ù",
+        "û"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "an",
+    "label": "AN",
+    "space": "Aragonés",
+    "title": "Арагонский",
+    "locale": "an-ES",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ó"
+      ],
+      "u": [
+        "ú",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ia",
+    "label": "IA",
+    "space": "Interlingua",
+    "title": "Интерлингва",
+    "locale": "ia-001",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "io",
+    "label": "IO",
+    "space": "Ido",
+    "title": "Идо",
+    "locale": "io-001",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "lg",
+    "label": "LG",
+    "space": "Luganda",
+    "title": "Луганда",
+    "locale": "lg-UG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "n": [
+        "ŋ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "rn",
+    "label": "RN",
+    "space": "Ikirundi",
+    "title": "Кирунди",
+    "locale": "rn-BI",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ki",
+    "label": "KI",
+    "space": "Gĩkũyũ",
+    "title": "Кикуйю",
+    "locale": "ki-KE",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "i": [
+        "ĩ"
+      ],
+      "u": [
+        "ũ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "nso",
+    "label": "NSO",
+    "space": "Sepedi",
+    "title": "Северный сото",
+    "locale": "nso-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "e": [
+        "ê"
+      ],
+      "o": [
+        "ô"
+      ],
+      "s": [
+        "š"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ss",
+    "label": "SS",
+    "space": "SiSwati",
+    "title": "Свати",
+    "locale": "ss-SZ",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ve",
+    "label": "VE",
+    "space": "Tshivenḓa",
+    "title": "Венда",
+    "locale": "ve-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "d": [
+        "ḓ"
+      ],
+      "l": [
+        "ḽ"
+      ],
+      "n": [
+        "ṋ",
+        "ṅ"
+      ],
+      "t": [
+        "ṱ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ts",
+    "label": "TS",
+    "space": "Xitsonga",
+    "title": "Тсонга",
+    "locale": "ts-ZA",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sg",
+    "label": "SG",
+    "space": "Sängö",
+    "title": "Санго",
+    "locale": "sg-CF",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "â",
+        "ä"
+      ],
+      "e": [
+        "ê",
+        "ë"
+      ],
+      "i": [
+        "î",
+        "ï"
+      ],
+      "o": [
+        "ô",
+        "ö"
+      ],
+      "u": [
+        "û",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "kg",
+    "label": "KG",
+    "space": "Kikongo",
+    "title": "Конго",
+    "locale": "kg-CD",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "tpi",
+    "label": "TPI",
+    "space": "Tok Pisin",
+    "title": "Ток-писин",
+    "locale": "tpi-PG",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "bi",
+    "label": "BI",
+    "space": "Bislama",
+    "title": "Бислама",
+    "locale": "bi-VU",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {},
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ty",
+    "label": "TY",
+    "space": "Reo Tahiti",
+    "title": "Таитянский",
+    "locale": "ty-PF",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ],
+      "u": [
+        "ū"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ch",
+    "label": "CH",
+    "space": "Chamoru",
+    "title": "Чаморро",
+    "locale": "ch-GU",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "å"
+      ],
+      "n": [
+        "ñ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ay",
+    "label": "AY",
+    "space": "Aymar aru",
+    "title": "Аймара",
+    "locale": "ay-BO",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ä"
+      ],
+      "i": [
+        "ï"
+      ],
+      "u": [
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "nah",
+    "label": "NAH",
+    "space": "Nāhuatl",
+    "title": "Науатль",
+    "locale": "nah-MX",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "ā"
+      ],
+      "e": [
+        "ē"
+      ],
+      "i": [
+        "ī"
+      ],
+      "o": [
+        "ō"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "pap",
+    "label": "PAP",
+    "space": "Papiamentu",
+    "title": "Папьяменто",
+    "locale": "pap-CW",
+    "rows": [
+      [
+        "q",
+        "w",
+        "e",
+        "r",
+        "t",
+        "y",
+        "u",
+        "i",
+        "o",
+        "p"
+      ],
+      [
+        "a",
+        "s",
+        "d",
+        "f",
+        "g",
+        "h",
+        "j",
+        "k",
+        "l",
+        "ñ"
+      ],
+      [
+        "z",
+        "x",
+        "c",
+        "v",
+        "b",
+        "n",
+        "m"
+      ]
+    ],
+    "accents": {
+      "a": [
+        "á"
+      ],
+      "e": [
+        "è",
+        "é"
+      ],
+      "i": [
+        "í"
+      ],
+      "o": [
+        "ò",
+        "ó"
+      ],
+      "u": [
+        "ù",
+        "ú",
+        "ü"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": true,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "sd",
+    "label": "SD",
+    "space": "سنڌي",
+    "title": "Синдхи",
+    "locale": "sd-PK",
+    "rows": [
+      [
+        "ق",
+        "ص",
+        "ي",
+        "ر",
+        "ت",
+        "ٽ",
+        "ث",
+        "ع",
+        "ڳ",
+        "و",
+        "ڦ"
+      ],
+      [
+        "ا",
+        "س",
+        "د",
+        "ف",
+        "گ",
+        "ه",
+        "ج",
+        "ڪ",
+        "ل",
+        "ک"
+      ],
+      [
+        "ز",
+        "خ",
+        "ط",
+        "ڄ",
+        "ب",
+        "ن",
+        "م",
+        "ڇ",
+        "چ"
+      ]
+    ],
+    "accents": {
+      "د": [
+        "ڏ",
+        "ڌ",
+        "ڊ",
+        "ڍ"
+      ],
+      "ج": [
+        "ڃ",
+        "ڄ"
+      ],
+      "ب": [
+        "ٻ",
+        "ڀ"
+      ],
+      "ن": [
+        "ڻ"
+      ],
+      "گ": [
+        "ڱ"
+      ],
+      "ڪ": [
+        "ک"
+      ],
+      "ا": [
+        "آ"
+      ],
+      "ي": [
+        "ئ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "dv",
+    "label": "DV",
+    "space": "ދިވެހި",
+    "title": "Мальдивский",
+    "locale": "dv-MV",
+    "rows": [
+      [
+        "ަ",
+        "ާ",
+        "ި",
+        "ީ",
+        "ު",
+        "ޫ",
+        "ެ",
+        "ޭ",
+        "ޮ",
+        "ޯ",
+        "ް"
+      ],
+      [
+        "ހ",
+        "ށ",
+        "ނ",
+        "ރ",
+        "ބ",
+        "ޅ",
+        "ކ",
+        "އ"
+      ],
+      [
+        "ވ",
+        "މ",
+        "ފ",
+        "ދ",
+        "ތ",
+        "ލ",
+        "ގ",
+        "ޏ"
+      ],
+      [
+        "ސ",
+        "ޑ",
+        "ޒ",
+        "ޓ",
+        "ޔ",
+        "ޕ",
+        "ޖ",
+        "ޗ"
+      ]
+    ],
+    "accents": {
+      "ހ": [
+        "ޙ",
+        "ޚ"
+      ],
+      "ތ": [
+        "ޘ"
+      ],
+      "ޒ": [
+        "ޛ",
+        "ޜ",
+        "ޡ"
+      ],
+      "ސ": [
+        "ޝ",
+        "ޞ"
+      ],
+      "ދ": [
+        "ޟ"
+      ],
+      "ޓ": [
+        "ޠ"
+      ],
+      "އ": [
+        "ޢ"
+      ],
+      "ގ": [
+        "ޣ"
+      ],
+      "ކ": [
+        "ޤ"
+      ],
+      "ވ": [
+        "ޥ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": true
+  },
+  {
+    "id": "bo",
+    "label": "BO",
+    "space": "བོད་ཡིག",
+    "title": "Тибетский",
+    "locale": "bo-CN",
+    "rows": [
+      [
+        "ཀ",
+        "ཁ",
+        "ག",
+        "ང",
+        "ཅ",
+        "ཆ",
+        "ཇ",
+        "ཉ",
+        "ཏ",
+        "ཐ"
+      ],
+      [
+        "ད",
+        "ན",
+        "པ",
+        "ཕ",
+        "བ",
+        "མ",
+        "ཙ",
+        "ཚ",
+        "ཛ",
+        "ཝ"
+      ],
+      [
+        "ཞ",
+        "ཟ",
+        "འ",
+        "ཡ",
+        "ར",
+        "ལ",
+        "ཤ",
+        "ས",
+        "ཧ",
+        "ཨ"
+      ],
+      [
+        "ི",
+        "ུ",
+        "ེ",
+        "ོ",
+        "་",
+        "།",
+        "ྱ",
+        "ྲ",
+        "ླ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ཀ": "ྐ",
+      "ཁ": "ྑ",
+      "ག": "ྒ",
+      "ང": "ྔ",
+      "ཅ": "ྕ",
+      "ཆ": "ྖ",
+      "ཇ": "ྗ",
+      "ཉ": "ྙ",
+      "ཏ": "ྟ",
+      "ཐ": "ྠ",
+      "ད": "ྡ",
+      "ན": "ྣ",
+      "པ": "ྤ",
+      "ཕ": "ྥ",
+      "བ": "ྦ",
+      "མ": "ྨ",
+      "ཙ": "ྩ",
+      "ཚ": "ྪ",
+      "ཛ": "ྫ",
+      "ཝ": "ྭ",
+      "ཞ": "ྮ",
+      "ཟ": "ྯ",
+      "འ": "ྰ",
+      "ཡ": "ྻ",
+      "ར": "ྼ",
+      "ལ": "ླ",
+      "ཤ": "ྵ",
+      "ས": "ྶ",
+      "ཧ": "ྷ",
+      "ཨ": "ྸ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": false,
+    "rtl": false
+  },
+  {
+    "id": "yi",
+    "label": "YI",
+    "space": "ייִדיש",
+    "title": "Идиш",
+    "locale": "yi-001",
+    "rows": [
+      [
+        "ק",
+        "ר",
+        "א",
+        "ט",
+        "ו",
+        "ן",
+        "ם",
+        "פ"
+      ],
+      [
+        "ש",
+        "ד",
+        "ג",
+        "כ",
+        "ע",
+        "י",
+        "ח",
+        "ל",
+        "ך",
+        "ף"
+      ],
+      [
+        "ז",
+        "ס",
+        "ב",
+        "ה",
+        "נ",
+        "מ",
+        "צ",
+        "ת",
+        "ץ"
+      ]
+    ],
+    "accents": {
+      "א": [
+        "אַ",
+        "אָ"
+      ],
+      "ו": [
+        "וּ",
+        "װ",
+        "ױ"
+      ],
+      "י": [
+        "יִ",
+        "ײ",
+        "ײַ"
+      ],
+      "פ": [
+        "פּ",
+        "פֿ"
+      ],
+      "כ": [
+        "כּ"
+      ],
+      "ש": [
+        "שׂ"
+      ],
+      "ת": [
+        "תּ"
+      ]
+    },
+    "shift": {},
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": true
+  },
+  {
+    "id": "sa",
+    "label": "SA",
+    "space": "संस्कृतम्",
+    "title": "Санскрит",
+    "locale": "sa-IN",
+    "rows": [
+      [
+        "ौ",
+        "ै",
+        "ा",
+        "ी",
+        "ू",
+        "ब",
+        "ह",
+        "ग",
+        "द",
+        "ज",
+        "ड"
+      ],
+      [
+        "ो",
+        "े",
+        "्",
+        "ि",
+        "ु",
+        "प",
+        "र",
+        "क",
+        "त",
+        "च",
+        "ट"
+      ],
+      [
+        "ं",
+        "म",
+        "न",
+        "व",
+        "ल",
+        "स",
+        "य"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ौ": "औ",
+      "ै": "ऐ",
+      "ा": "आ",
+      "ी": "ई",
+      "ू": "ऊ",
+      "ब": "भ",
+      "ह": "ङ",
+      "ग": "घ",
+      "द": "ध",
+      "ज": "झ",
+      "ड": "ढ",
+      "ो": "ओ",
+      "े": "ए",
+      "्": "अ",
+      "ि": "इ",
+      "ु": "उ",
+      "प": "फ",
+      "र": "ऱ",
+      "क": "ख",
+      "त": "थ",
+      "च": "छ",
+      "ट": "ठ",
+      "ं": "ँ",
+      "म": "ण",
+      "न": "ञ",
+      "व": "ऋ",
+      "ल": "ळ",
+      "स": "श",
+      "य": "ष"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "mai",
+    "label": "MAI",
+    "space": "मैथिली",
+    "title": "Майтхили",
+    "locale": "mai-IN",
+    "rows": [
+      [
+        "ौ",
+        "ै",
+        "ा",
+        "ी",
+        "ू",
+        "ब",
+        "ह",
+        "ग",
+        "द",
+        "ज",
+        "ड"
+      ],
+      [
+        "ो",
+        "े",
+        "्",
+        "ि",
+        "ु",
+        "प",
+        "र",
+        "क",
+        "त",
+        "च",
+        "ट"
+      ],
+      [
+        "ं",
+        "म",
+        "न",
+        "व",
+        "ल",
+        "स",
+        "य"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ौ": "औ",
+      "ै": "ऐ",
+      "ा": "आ",
+      "ी": "ई",
+      "ू": "ऊ",
+      "ब": "भ",
+      "ह": "ङ",
+      "ग": "घ",
+      "द": "ध",
+      "ज": "झ",
+      "ड": "ढ",
+      "ो": "ओ",
+      "े": "ए",
+      "्": "अ",
+      "ि": "इ",
+      "ु": "उ",
+      "प": "फ",
+      "र": "ऱ",
+      "क": "ख",
+      "त": "थ",
+      "च": "छ",
+      "ट": "ठ",
+      "ं": "ँ",
+      "म": "ण",
+      "न": "ञ",
+      "व": "ऋ",
+      "ल": "ळ",
+      "स": "श",
+      "य": "ष"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "as",
+    "label": "AS",
+    "space": "অসমীয়া",
+    "title": "Ассамский",
+    "locale": "as-IN",
+    "rows": [
+      [
+        "ৌ",
+        "ৈ",
+        "া",
+        "ী",
+        "ূ",
+        "ব",
+        "হ",
+        "গ",
+        "দ",
+        "জ",
+        "ড"
+      ],
+      [
+        "ো",
+        "ে",
+        "্",
+        "ি",
+        "ু",
+        "প",
+        "র",
+        "ক",
+        "ত",
+        "চ",
+        "ট"
+      ],
+      [
+        "ং",
+        "ম",
+        "ন",
+        "ল",
+        "স",
+        "য"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ৌ": "ঔ",
+      "ৈ": "ঐ",
+      "া": "আ",
+      "ী": "ঈ",
+      "ূ": "ঊ",
+      "ব": "ভ",
+      "হ": "ঙ",
+      "গ": "ঘ",
+      "দ": "ধ",
+      "জ": "ঝ",
+      "ড": "ঢ",
+      "ো": "ও",
+      "ে": "এ",
+      "্": "অ",
+      "ি": "ই",
+      "ু": "উ",
+      "প": "ফ",
+      "ক": "খ",
+      "ত": "থ",
+      "চ": "ছ",
+      "ট": "ঠ",
+      "ং": "ঁ",
+      "ম": "ণ",
+      "ন": "ঞ",
+      "স": "শ",
+      "য": "ষ"
+    },
+    "dictionary": null,
+    "hasCase": false,
+    "composer": "none",
+    "autoCorrect": true,
+    "rtl": false
+  },
+  {
+    "id": "ko",
+    "label": "KO",
+    "space": "한국어",
+    "title": "Корейский",
+    "locale": "ko-KR",
+    "rows": [
+      [
+        "ㅂ",
+        "ㅈ",
+        "ㄷ",
+        "ㄱ",
+        "ㅅ",
+        "ㅛ",
+        "ㅕ",
+        "ㅑ",
+        "ㅐ",
+        "ㅔ"
+      ],
+      [
+        "ㅁ",
+        "ㄴ",
+        "ㅇ",
+        "ㄹ",
+        "ㅎ",
+        "ㅗ",
+        "ㅓ",
+        "ㅏ",
+        "ㅣ"
+      ],
+      [
+        "ㅋ",
+        "ㅌ",
+        "ㅊ",
+        "ㅍ",
+        "ㅠ",
+        "ㅜ",
+        "ㅡ"
+      ]
+    ],
+    "accents": {},
+    "shift": {
+      "ㅂ": "ㅃ",
+      "ㅈ": "ㅉ",
+      "ㄷ": "ㄸ",
+      "ㄱ": "ㄲ",
+      "ㅅ": "ㅆ",
+      "ㅐ": "ㅒ",
+      "ㅔ": "ㅖ"
+    },
+    "dictionary": "ko",
+    "hasCase": false,
+    "composer": "hangul",
+    "autoCorrect": false,
+    "rtl": false
+  }
+]
