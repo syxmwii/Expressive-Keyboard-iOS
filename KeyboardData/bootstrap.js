@@ -30,9 +30,9 @@
     overlay.set = items => call('draw', 'set', items);
     const api = {
         on: (name, callback) => {
-            if (typeof callback === 'function') (events[name] ||= []).push(callback);
+            if (typeof callback === 'function') { (events[name] ||= []).push(callback); call('subscribe', name); }
         },
-        off: name => delete events[name],
+        off: name => { delete events[name]; call('unsubscribe', name); },
         addPanel: panel => { if (panels.length < 24) panels.push(panel); },
         addButton: button => { if (buttons.length < 24) buttons.push(button); },
         commit: text => call('commit', text),

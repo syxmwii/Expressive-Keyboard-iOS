@@ -64,8 +64,8 @@ def configs(target, settings):
 sdk = configs('project', dict(
     SDKROOT='iphoneos', IPHONEOS_DEPLOYMENT_TARGET='17.0', TARGETED_DEVICE_FAMILY='1,2',
     SWIFT_VERSION='5.0', CLANG_ENABLE_MODULES='YES', CLANG_ENABLE_OBJC_ARC='YES',
-    GCC_C_LANGUAGE_STANDARD='gnu11', CODE_SIGN_STYLE='Automatic', CURRENT_PROJECT_VERSION=3,
-    MARKETING_VERSION='1.0.2', EXPRESSIVE_BUNDLE_ID='org.expressive.keyboard.ios',
+    GCC_C_LANGUAGE_STANDARD='gnu11', CODE_SIGN_STYLE='Automatic', CURRENT_PROJECT_VERSION=4,
+    MARKETING_VERSION='1.0.3', EXPRESSIVE_BUNDLE_ID='org.expressive.keyboard.ios',
     EXPRESSIVE_APP_GROUP='', ENABLE_USER_SCRIPT_SANDBOXING='YES',
     SUPPORTED_PLATFORMS='iphoneos iphonesimulator', GCC_PREPROCESSOR_DEFINITIONS=['$(inherited)', 'CONFIG_VERSION=\\"2026-06-04\\"'],
     SWIFT_OBJC_BRIDGING_HEADER='Runtime/Bridge.h', OTHER_LDFLAGS=['$(inherited)', '-lsqlite3', '-lz'],

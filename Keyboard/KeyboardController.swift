@@ -40,6 +40,13 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     var pendingNetwork: Task<Void, Never>?
     var runtimes: [String: ScriptRuntime] = [:]
     var frameTimer: Timer?
+    var subscriptions: [String: Set<String>] = [:]
+    var enabledPlugins: [Plugin] = []
+    var variantMap: [String: [String]] = [:]
+    var shortcuts: [String: String] = [:]
+    weak var shiftKey: ExpressiveButton?
+    var displayedCapital = false
+    private var predictionJob: DispatchWorkItem?
     var captureTouches = false
     var pressDepth = 0
     var suppressTextChanges = false
@@ -98,6 +105,8 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         ])
         let pan = UIPanGestureRecognizer(target: self, action: #selector(trackGlide(_:)))
         pan.delegate = self
+        pan.delaysTouchesBegan = false
+        pan.delaysTouchesEnded = false
         pan.cancelsTouchesInView = true
         pan.maximumNumberOfTouches = 1
         view.addGestureRecognizer(pan)
@@ -117,6 +126,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         emit("show")
         emit("start", ["type": textDocumentProxy.keyboardType?.rawValue ?? 0])
         frameTimer?.invalidate()
+        guard subscriptions.values.contains(where: { $0.contains("frame") }) else { return }
         frameTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / 30, repeats: true) { [weak self] _ in
             guard let self, !self.runtimes.isEmpty else { return }
             self.emit("frame", 33)
@@ -187,6 +197,8 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
 
     func reload() {
         preferences = SharedStore.load()
+        enabledPlugins = preferences.activePlugins
+        shortcuts = enabledPlugins.reduce(into: [:]) { $0.merge($1.shortcuts) { _, new in new } }
         availableLayouts = preferences.enabledLayouts
         if !availableLayouts.contains(where: { $0.id == languageID }) { languageID = availableLayouts[0].id }
         primaryLanguage = language.locale
@@ -242,7 +254,10 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             let choice = preferences.design == .expressive ? weighted.fontDescriptor.withDesign(.rounded) : nil
             button.titleLabel?.font = choice.map { UIFont(descriptor: $0, size: size) } ?? weighted
         }
-        button.wavy = preferences.design == .expressive && (style == 2 ? preferences.shapes > 0 : preferences.shapes == 2)
+        if preferences.design == .expressive && (preferences.shapes == 2 || (style == 2 && preferences.shapes == 1)) {
+            button.layer.cornerCurve = .continuous
+            button.layer.cornerRadius = min(22, CGFloat(preferences.radius) + 4)
+        }
         return button
     }
 
@@ -273,6 +288,15 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     }
 
     func updateHeader() {
+        predictionJob?.cancel()
+        if case .typing = panel, !header.arrangedSubviews.isEmpty {
+            let job = DispatchWorkItem { [weak self] in self?.renderHeader() }
+            predictionJob = job
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(35), execute: job)
+        } else { renderHeader() }
+    }
+
+    func renderHeader() {
         clear(header)
         let title: String
         switch panel {
@@ -291,6 +315,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
                 self.switchPanel(.typing)
             }
         }
+        menu.symbol(title == "▦" ? "gearshape" : title == "×" ? "xmark" : "chevron.left")
         menu.widthAnchor.constraint(equalToConstant: 42).isActive = true
         header.addArrangedSubview(menu)
         if let search = pendingSearch, case .typing = panel {
@@ -380,6 +405,15 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         } else {
             rows = (preferences.numberRow ? [KeyboardLayout.tokens("1234567890")] : []) + language.rows
         }
+        displayedCapital = shift > 0 || autoShift
+        variantMap = language.accents
+        for plugin in enabledPlugins {
+            if let maps = plugin.object["variants"] as? [String: [String: [String]]] {
+                for (key, extra) in (maps["*"] ?? [:]).merging(maps[language.id] ?? [:], uniquingKeysWith: { _, new in new }) {
+                    variantMap[key, default: []] += extra
+                }
+            }
+        }
         for (index, line) in rows.enumerated() {
             var buttons: [UIView] = []
             let last = index == rows.count - 1
@@ -389,6 +423,10 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
                                       style: symbols == 0 && capital ? 2 : 1, size: 19, accessible: L("Shift", "Регистр")) { [weak self] in
                     self?.toggleShift()
                 }
+                if symbols == 0 {
+                    shiftKey = shiftButton
+                    shiftButton.symbol(shift == 2 ? "capslock.fill" : capital ? "shift.fill" : "shift")
+                }
                 buttons.append(shiftButton)
             }
             for value in line {
@@ -396,16 +434,16 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
                     buttons.append(deleteKey())
                     continue
                 }
-                let shown = symbols == 0 && !numeric ? shifted(value) : value
+                let shown = symbols == 0 && !numeric ? shifted(value, capital: displayedCapital) : value
                 let button = key(shown) { [weak self] in self?.type(shown) }
                 if symbols == 0 && !numeric {
+                    button.action = { [weak self, weak button] in
+                        guard let self, let text = button?.title(for: .normal) else { return }
+                        self.type(text)
+                    }
                     button.value = value
                     markedButtons.append(button)
-                    var alternatives = language.accents[value] ?? []
-                    for plugin in preferences.activePlugins {
-                        if let maps = plugin.object["variants"] as? [String: [String: [String]]],
-                           let extra = maps[language.id]?[value] ?? maps["*"]?[value] { alternatives += extra }
-                    }
+                    var alternatives = variantMap[value] ?? []
                     if value == "е" && language.id == "ru" { alternatives.append("ё") }
                     if value == "ь" && language.id == "ru" { alternatives.append("ъ") }
                     if index == (preferences.numberRow ? 1 : 0), let place = line.firstIndex(of: value), place < 10 {
@@ -458,6 +496,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             self.redraw()
         }
         let enter = key(returnLabel, style: 2, size: 17, accessible: L("Return", "Ввод")) { [weak self] in self?.enter() }
+        if returnLabel == "↵" { enter.symbol("return") }
         var keys = [numbers, languageKey, space, punctuation, enter]
         if needsInputModeSwitchKey {
             let globe = key("◎", style: 1, size: 19, accessible: L("Next keyboard", "Следующая клавиатура"))
@@ -500,8 +539,27 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             (value.last?.isWhitespace == true && value.trimmingCharacters(in: .whitespaces).last.map { ".!?。！？".contains($0) } == true)
     }
 
-    func shifted(_ value: String) -> String {
-        guard shift > 0 || autoShift else { return value }
+    func refreshTyping() {
+        let capital = shift > 0 || autoShift
+        if capital != displayedCapital {
+            displayedCapital = capital
+            for button in markedButtons {
+                guard let value = button.value else { continue }
+                let title = shifted(value, capital: capital)
+                button.setTitle(title, for: .normal)
+                button.accessibilityLabel = title
+            }
+        }
+        if let button = shiftKey {
+            button.baseColor = capital ? theme.accent : theme.function
+            button.setTitleColor(capital ? theme.accentText : theme.functionText, for: .normal)
+            button.symbol(shift == 2 ? "capslock.fill" : capital ? "shift.fill" : "shift")
+        }
+        updateHeader()
+    }
+
+    func shifted(_ value: String, capital: Bool? = nil) -> String {
+        guard capital ?? (shift > 0 || autoShift) else { return value }
         return language.shift[value] ?? (language.hasCase ? value.uppercased(with: Locale(identifier: language.locale)) : value)
     }
 
@@ -538,7 +596,6 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         composingUndo = nil
         if let result = emit("key", ["text": key], needsText: true) as? Bool, result == false { return }
         let value = (lastScriptResult as? String) ?? key
-        let capitals = autoShift || shift == 1
         if currentComposition != "none", symbols == 0, value.unicodeScalars.allSatisfy({
             CharacterSet.letters.contains($0) || CharacterSet.nonBaseCharacters.contains($0) || (cjk && ($0 == "'" || $0 == "-"))
         }) {
@@ -549,7 +606,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             insert(value)
         }
         if shift == 1 { shift = 0 }
-        if capitals || autoShift || value == "." { redraw() } else { updateHeader() }
+        refreshTyping()
     }
 
     func insert(_ text: String) {
@@ -596,14 +653,14 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         if emit("space") as? Bool == false { return }
         if cjk && !composition.isEmpty {
             finish(candidates().first ?? rendered)
-            redraw()
+            refreshTyping()
             return
         }
         finish()
         glideAlternatives.removeAll()
         let word = prefix
         let token = context.split(whereSeparator: \.isWhitespace).last.map(String.init) ?? ""
-        if !privateInput, let shortcut = preferences.activePlugins.reversed().compactMap({ $0.shortcuts[token] }).first {
+        if !privateInput, let shortcut = shortcuts[token] {
             erase(token.count)
             insert(Plugin.expand(shortcut) + " ")
         } else if Date().timeIntervalSince(lastSpace) < 0.34, context.last == " ",
@@ -631,7 +688,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             learn(correction ?? word)
             if !word.isEmpty { emit("word", ["word": correction ?? word], needsText: true) }
         }
-        redraw()
+        refreshTyping()
     }
 
     func enter() {
@@ -639,7 +696,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         if emit("enter") as? Bool == false { return }
         finish(cjk ? candidates().first : nil)
         insert("\n")
-        redraw()
+        refreshTyping()
     }
 
     func backspace() {
@@ -657,17 +714,17 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         }
         composingUndo = nil
         glideAlternatives.removeAll()
-        redraw()
+        refreshTyping()
     }
 
     func deleteWord() {
         if pendingSearch != nil { searchText = ""; updateHeader(); return }
-        if !composition.isEmpty { composition = ""; updateComposition(); redraw(); return }
+        if !composition.isEmpty { composition = ""; updateComposition(); refreshTyping(); return }
         let trailing = context.reversed().prefix(while: \.isWhitespace).count
         let count = context.dropLast(trailing).reversed().prefix { !$0.isWhitespace }.count
         erase(max(1, count + trailing))
         composingUndo = nil
-        redraw()
+        refreshTyping()
     }
 
     func candidates() -> [String] {
@@ -700,7 +757,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
                 let locale = language.locale.replacingOccurrences(of: "-", with: "_")
                 let systemLanguage = UITextChecker.availableLanguages.first { $0 == locale }
                     ?? UITextChecker.availableLanguages.first { $0.hasPrefix(String(locale.split(separator: "_").first ?? "")) }
-                let system = systemLanguage.flatMap {
+                let system = matches.count >= 4 ? [] : systemLanguage.flatMap {
                     checker.completions(forPartialWordRange: NSRange(location: 0, length: word.utf16.count), in: word, language: $0)
                 } ?? []
                 let typo = lexicon.correction(word, language: dictionary) ?? supplementary[word.lowercased()]
@@ -728,7 +785,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         }
         glideAlternatives.removeAll()
         lastGlide = ""
-        redraw()
+        refreshTyping()
     }
 
     func learn(_ word: String) {
@@ -787,6 +844,14 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
                 if pan.state == .ended, let letter = path.first { type(shifted(letter)) }
                 return
             }
+            let distance = points.reduce(CGFloat.zero) { longest, point in
+                guard let first = points.first else { return longest }
+                return max(longest, hypot(point.x - first.x, point.y - first.y))
+            }
+            if distance < max(20, (markedButtons.first?.bounds.width ?? 32) * 0.85), let first = path.first {
+                type(shifted(first))
+                return
+            }
             let choices = lexicon.glide(path, language: dictionary)
             guard let word = choices.first else { return }
             let final = autoShift || shift > 0 ? word.prefix(1).uppercased() + word.dropFirst() : word
@@ -796,7 +861,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             glideAlternatives = choices
             shift = shift == 2 ? 2 : 0
             emit("glide", ["word": final, "alternatives": choices], needsText: true)
-            redraw()
+            refreshTyping()
         }
     }
 

@@ -65,8 +65,8 @@ struct SettingsView: View {
                                 guard data.count <= 32_000_000 else { throw CocoaError(.fileReadTooLarge) }
                                 UIPasteboard.general.setItems([[SharedStore.transferType: data]],
                                     options: [.localOnly: true, .expirationDate: Date().addingTimeInterval(300)])
-                                error = L("Open Expressive Keyboard → ▦ → Apply settings within five minutes.",
-                                          "В течение пяти минут откройте Expressive Keyboard → ▦ → Применить настройки.")
+                                error = L("Open Expressive Keyboard → ⚙ → Apply settings within five minutes.",
+                                          "В течение пяти минут откройте Expressive Keyboard → ⚙ → Применить настройки.")
                             } catch { self.error = error.localizedDescription }
                         }
                         Text(L("After changing settings, copy them here and apply them in the keyboard. Clipboard transfer needs Full Access. Quick settings are also available directly on the keyboard.",

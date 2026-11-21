@@ -2,8 +2,9 @@ import UIKit
 
 extension KeyboardController {
     func loadScripts() {
+        subscriptions.removeAll()
         runtimes.removeAll()
-        for plugin in preferences.activePlugins.filter({ $0.script != nil }).prefix(12) {
+        for plugin in enabledPlugins.filter({ $0.script != nil }).prefix(12) {
             runtimes[plugin.id] = ScriptRuntime(plugin: plugin) { [weak self] method, values in
                 self?.scriptHost(plugin, method, values)
             }
@@ -14,8 +15,8 @@ extension KeyboardController {
     func emit(_ event: String, _ value: Any = NSNull(), needsText: Bool = false) -> Any? {
         lastScriptResult = nil
         guard !privateInput else { return nil }
-        for plugin in preferences.activePlugins {
-            guard let runtime = runtimes[plugin.id], !needsText || plugin.permissions.contains("read_text") else { continue }
+        for plugin in enabledPlugins {
+            guard subscriptions[plugin.id]?.contains(event) == true, let runtime = runtimes[plugin.id], !needsText || plugin.permissions.contains("read_text") else { continue }
             if let result = runtime.event(event, value), !(result is NSNull) {
                 lastScriptResult = result
                 if result as? Bool == false { break }
@@ -32,6 +33,8 @@ extension KeyboardController {
         let number = max(-500, min(500, first as? Int ?? 0))
         let storageKey = "module." + plugin.id
         switch method {
+        case "subscribe": subscriptions[plugin.id, default: []].insert(text)
+        case "unsubscribe": subscriptions[plugin.id]?.remove(text)
         case "commit":
             insert(String(text.prefix(4_000)))
         case "deleteBefore":

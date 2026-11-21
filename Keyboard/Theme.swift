@@ -59,12 +59,19 @@ extension UIColor {
 }
 
 final class ExpressiveButton: UIButton {
-    var hold: (() -> Void)?
+    var hold: (() -> Void)? {
+        didSet {
+            guard hold != nil, oldValue == nil, gestureRecognizers?.contains(where: { $0 is UILongPressGestureRecognizer }) != true else { return }
+            let longPress = UILongPressGestureRecognizer(target: self, action: #selector(held(_:)))
+            longPress.minimumPressDuration = 0.37
+            longPress.cancelsTouchesInView = false
+            longPress.delaysTouchesEnded = false
+            addGestureRecognizer(longPress)
+        }
+    }
     var action: (() -> Void)?
     var value: String?
     var variantValues: [String] = []
-    var wavy = false { didSet { setNeedsLayout() } }
-    private let waveMask = CAShapeLayer()
     private var consumedHold = false
     var baseColor = UIColor.clear { didSet { backgroundColor = baseColor } }
 
@@ -72,10 +79,6 @@ final class ExpressiveButton: UIButton {
         super.init(frame: frame)
         addTarget(self, action: #selector(activate), for: .touchUpInside)
         addTarget(self, action: #selector(reset), for: .touchDown)
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(held(_:)))
-        longPress.minimumPressDuration = 0.37
-        longPress.cancelsTouchesInView = false
-        addGestureRecognizer(longPress)
         accessibilityTraits = .button
         titleLabel?.adjustsFontSizeToFitWidth = true
         titleLabel?.minimumScaleFactor = 0.55
@@ -86,28 +89,15 @@ final class ExpressiveButton: UIButton {
 
     override var isHighlighted: Bool {
         didSet {
-            UIView.animate(withDuration: isHighlighted ? 0.06 : 0.14) {
-                self.transform = self.isHighlighted ? CGAffineTransform(scaleX: 0.94, y: 0.94) : .identity
-                self.backgroundColor = self.isHighlighted ? self.baseColor.withAlphaComponent(0.65) : self.baseColor
-            }
+            backgroundColor = isHighlighted ? baseColor.withAlphaComponent(0.65) : baseColor
         }
     }
 
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        guard wavy, bounds.width > 1, bounds.height > 1 else { layer.mask = nil; return }
-        let path = UIBezierPath()
-        for step in 0...120 {
-            let angle = CGFloat(step) / 120 * 2 * .pi
-            let radial = 0.92 + 0.075 * cos(10 * angle)
-            let point = CGPoint(x: bounds.midX + bounds.midX * radial * cos(angle),
-                                y: bounds.midY + bounds.midY * radial * sin(angle))
-            if step == 0 { path.move(to: point) } else { path.addLine(to: point) }
-        }
-        path.close()
-        waveMask.frame = bounds
-        waveMask.path = path.cgPath
-        layer.mask = waveMask
+    func symbol(_ name: String, size: CGFloat = 18) {
+        let image = UIImage(systemName: name, withConfiguration: UIImage.SymbolConfiguration(pointSize: size, weight: .semibold))
+        setTitle(nil, for: .normal)
+        setImage(image, for: .normal)
+        tintColor = titleColor(for: .normal)
     }
 
     @objc private func reset() { consumedHold = false }
