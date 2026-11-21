@@ -60,7 +60,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     let defaults = UserDefaults.standard
 
     override func loadView() {
-        inputView = ExpressiveInputView(frame: .zero, inputViewStyle: .keyboard)
+        view = ExpressiveInputView(frame: .zero, inputViewStyle: .keyboard)
     }
 
     override func viewDidLoad() {
@@ -109,7 +109,6 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         requestSupplementaryLexicon { [weak self] lexicon in
             for entry in lexicon.entries { self?.supplementary[entry.userInput.lowercased()] = entry.documentText }
         }
-        reload()
     }
 
     override func viewWillAppear(_ animated: Bool) {

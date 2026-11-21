@@ -43,4 +43,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --verify-tag --title "Expressive Keyboard iOS $GITHUB_REF_NAME" --notes "Unsigned device build for iOS 17+. Installation requires signing both the app and keyboard extension with matching App Group provisioning. See README.md." ExpressiveKeyboard-unsigned.ipa SHA256SUMS.txt
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --verify-tag --title "Expressive Keyboard iOS $GITHUB_REF_NAME" --notes "Unsigned device build for iOS 17+. Installation requires signing both the app and keyboard extension with the same team. Keep app extensions when signing. App Groups are optional. See README.md." ExpressiveKeyboard-unsigned.ipa SHA256SUMS.txt

@@ -152,7 +152,7 @@
 			"path" = "Runtime/quickjs/quickjs.c";
 			"sourceTree" = "SOURCE_ROOT";
 		};
-		"87DF60DE337FB58864343E39" = {
+		"F0417413C950A5507005F806" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "folder";
 			"name" = "KeyboardData";
@@ -239,7 +239,7 @@
 				"CBE7D790BBE2BD0D8B77EF39",
 				"0C96A57C90FC68E4D563EDD4",
 				"741A11A4DFB664DACDBC8CC9",
-				"87DF60DE337FB58864343E39",
+				"F0417413C950A5507005F806",
 				"FBDC4F23F93125BBEEAE800C",
 			);
 		};
@@ -254,10 +254,10 @@
 				"CLANG_ENABLE_OBJC_ARC" = "YES";
 				"GCC_C_LANGUAGE_STANDARD" = "gnu11";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = 1;
-				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = 3;
+				"MARKETING_VERSION" = "1.0.2";
 				"EXPRESSIVE_BUNDLE_ID" = "org.expressive.keyboard.ios";
-				"EXPRESSIVE_APP_GROUP" = "group.$(EXPRESSIVE_BUNDLE_ID)";
+				"EXPRESSIVE_APP_GROUP" = "";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"GCC_PREPROCESSOR_DEFINITIONS" = (
@@ -290,10 +290,10 @@
 				"CLANG_ENABLE_OBJC_ARC" = "YES";
 				"GCC_C_LANGUAGE_STANDARD" = "gnu11";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = 1;
-				"MARKETING_VERSION" = "1.0";
+				"CURRENT_PROJECT_VERSION" = 3;
+				"MARKETING_VERSION" = "1.0.2";
 				"EXPRESSIVE_BUNDLE_ID" = "org.expressive.keyboard.ios";
-				"EXPRESSIVE_APP_GROUP" = "group.$(EXPRESSIVE_BUNDLE_ID)";
+				"EXPRESSIVE_APP_GROUP" = "";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"GCC_PREPROCESSOR_DEFINITIONS" = (
@@ -451,7 +451,6 @@
 				"PRODUCT_NAME" = "ExpressiveKeyboard";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "$(EXPRESSIVE_BUNDLE_ID)";
 				"INFOPLIST_FILE" = "App/Info.plist";
-				"CODE_SIGN_ENTITLEMENTS" = "App/Group.entitlements";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
@@ -468,7 +467,6 @@
 				"PRODUCT_NAME" = "ExpressiveKeyboard";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "$(EXPRESSIVE_BUNDLE_ID)";
 				"INFOPLIST_FILE" = "App/Info.plist";
-				"CODE_SIGN_ENTITLEMENTS" = "App/Group.entitlements";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
@@ -606,15 +604,15 @@
 			);
 			"runOnlyForDeploymentPostprocessing" = 0;
 		};
-		"961D3F8034180AAF73D632CC" = {
+		"BAC7BBCE2873572F6A8417C8" = {
 			"isa" = "PBXBuildFile";
-			"fileRef" = "87DF60DE337FB58864343E39";
+			"fileRef" = "F0417413C950A5507005F806";
 		};
 		"0959B9D4E85D41FA8ABDB4DD" = {
 			"isa" = "PBXResourcesBuildPhase";
 			"buildActionMask" = 2147483647;
 			"files" = (
-				"961D3F8034180AAF73D632CC",
+				"BAC7BBCE2873572F6A8417C8",
 			);
 			"runOnlyForDeploymentPostprocessing" = 0;
 		};
@@ -624,7 +622,6 @@
 				"PRODUCT_NAME" = "ExpressiveExtension";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "$(EXPRESSIVE_BUNDLE_ID).keyboard";
 				"INFOPLIST_FILE" = "Keyboard/Info.plist";
-				"CODE_SIGN_ENTITLEMENTS" = "Keyboard/Group.entitlements";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
@@ -642,7 +639,6 @@
 				"PRODUCT_NAME" = "ExpressiveExtension";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "$(EXPRESSIVE_BUNDLE_ID).keyboard";
 				"INFOPLIST_FILE" = "Keyboard/Info.plist";
-				"CODE_SIGN_ENTITLEMENTS" = "Keyboard/Group.entitlements";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",

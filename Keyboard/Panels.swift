@@ -56,6 +56,12 @@ extension KeyboardController {
         }
     }
 
+    func changeSettings(_ change: (inout Preferences) -> Void) {
+        var next = preferences
+        change(&next)
+        do { try SharedStore.save(next); reload() } catch { setStatus(error.localizedDescription) }
+    }
+
     func showToolbar() {
         let tools: [(String, Panel)] = [
             (L("☺  Emoji", "☺  Эмодзи"), .emoji), ("GIF", .gifs),
@@ -63,6 +69,51 @@ extension KeyboardController {
             (L("Dictation", "Диктовка"), .voice), (L("Plugins", "Плагины"), .plugins)
         ]
         let list = scroll()
+        if SharedStore.sharedContainer == nil {
+            let apply = key(L("Apply settings from app", "Применить настройки из приложения"), style: 2, size: 15) { [weak self] in
+                guard let self else { return }
+                guard self.hasFullAccess else {
+                    self.setStatus(L("Allow Full Access to import settings.", "Чтобы перенести настройки, разрешите полный доступ."))
+                    return
+                }
+                guard let data = UIPasteboard.general.data(forPasteboardType: SharedStore.transferType) else {
+                    self.setStatus(L("First copy settings in the app.", "Сначала скопируйте настройки в приложении."))
+                    return
+                }
+                do {
+                    try SharedStore.accept(data)
+                    self.reload()
+                    self.switchPanel(.typing)
+                } catch { self.setStatus(error.localizedDescription) }
+            }
+            apply.heightAnchor.constraint(equalToConstant: 39).isActive = true
+            list.addArrangedSubview(apply)
+            let quick = key(L("Quick settings", "Быстрые настройки"), style: 1, size: 15)
+            quick.menu = UIMenu(children: [
+                UIMenu(title: L("Design", "Оформление"), children: Design.allCases.map { design in
+                    UIAction(title: design.title, state: design == preferences.design ? .on : .off) { [weak self] _ in
+                        self?.changeSettings { $0.design = design; $0.radius = design.radius; $0.skinPlugin = "" }
+                    }
+                }),
+                UIMenu(title: L("Languages", "Языки"), children: preferences.allLayouts.map { layout in
+                    UIAction(title: layout.space, state: preferences.languages.contains(layout.id) ? .on : .off) { [weak self] _ in
+                        self?.changeSettings {
+                            if !$0.languages.contains(layout.id) { $0.languages.append(layout.id) }
+                            else if $0.languages.count > 1 { $0.languages.removeAll { $0 == layout.id } }
+                        }
+                    }
+                }),
+                UIAction(title: L("Number row", "Ряд цифр"), state: preferences.numberRow ? .on : .off) { [weak self] _ in
+                    self?.changeSettings { $0.numberRow.toggle() }
+                },
+                UIAction(title: L("Autocorrect", "Автоисправление"), state: preferences.autocorrect ? .on : .off) { [weak self] _ in
+                    self?.changeSettings { $0.autocorrect.toggle() }
+                }
+            ])
+            quick.showsMenuAsPrimaryAction = true
+            quick.heightAnchor.constraint(equalToConstant: 39).isActive = true
+            list.addArrangedSubview(quick)
+        }
         grid(tools.map(\.0), columns: 3, into: list, size: 14) { [weak self] name in
             if let panel = tools.first(where: { $0.0 == name })?.1 { self?.switchPanel(panel) }
         }

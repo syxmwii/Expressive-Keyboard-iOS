@@ -182,18 +182,56 @@ struct Preferences: Codable {
 
 enum SharedStore {
     static var groupID: String {
-        Bundle.main.object(forInfoDictionaryKey: "ExpressiveAppGroup") as? String ?? "group.org.expressive.keyboard.ios"
+        Bundle.main.object(forInfoDictionaryKey: "ExpressiveAppGroup") as? String ?? ""
     }
 
-    static var container: URL? {
+    static var sharedContainer: URL? {
         #if os(iOS)
+        guard !groupID.isEmpty else { return nil }
         return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: groupID)
         #else
         return nil
         #endif
     }
 
+    static var container: URL? {
+        if let sharedContainer { return sharedContainer }
+        return try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask,
+                                            appropriateFor: nil, create: true)
+    }
+
     static func file(_ name: String) -> URL? { container?.appendingPathComponent(name) }
+
+    static let transferType = "org.expressive.keyboard.settings"
+    struct Transfer: Codable {
+        var version = 1
+        var settings: Preferences
+        var photo: Data?
+        var font: Data?
+    }
+
+    static func transfer(_ settings: Preferences) throws -> Data {
+        func asset(_ name: String, enabled: Bool) throws -> Data? {
+            guard enabled, let url = file(name) else { return nil }
+            return try Data(contentsOf: url)
+        }
+        let value = try Transfer(settings: settings, photo: asset("background.jpg", enabled: settings.hasPhoto),
+                                 font: asset("font", enabled: settings.hasFont))
+        return try PropertyListEncoder().encode(value)
+    }
+
+    static func accept(_ data: Data) throws {
+        guard data.count <= 32_000_000 else { throw CocoaError(.fileReadTooLarge) }
+        var value = try PropertyListDecoder().decode(Transfer.self, from: data)
+        guard value.version == 1 else { throw CocoaError(.fileReadCorruptFile) }
+        value.settings.normalize()
+        for (name, bytes) in [("background.jpg", value.photo), ("font", value.font)] {
+            if let bytes, let url = file(name) { try bytes.write(to: url, options: .atomic) }
+        }
+        value.settings.hasPhoto = value.photo != nil
+        value.settings.hasFont = value.font != nil
+        try save(value.settings)
+    }
 
     static func read<T: Decodable>(_ type: T.Type, _ name: String) -> T? {
         guard let url = file(name), let data = try? Data(contentsOf: url) else { return nil }

@@ -17,6 +17,11 @@ struct VoiceView: View {
                 }
                 Button(L("Save to keyboard", "Сохранить для клавиатуры")) {
                     do {
+                        if SharedStore.sharedContainer == nil {
+                            UIPasteboard.general.string = speech.transcript
+                            speech.message = L("Transcript copied. Paste it into your text field.", "Расшифровка скопирована. Вставьте её в текстовое поле.")
+                            return
+                        }
                         try SharedStore.write(speech.transcript, "dictation.json")
                         speech.message = L("Open Dictation on the keyboard to insert the transcript.",
                                            "Откройте Диктовку на клавиатуре, чтобы вставить расшифровку.")

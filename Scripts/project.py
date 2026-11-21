@@ -64,9 +64,9 @@ def configs(target, settings):
 sdk = configs('project', dict(
     SDKROOT='iphoneos', IPHONEOS_DEPLOYMENT_TARGET='17.0', TARGETED_DEVICE_FAMILY='1,2',
     SWIFT_VERSION='5.0', CLANG_ENABLE_MODULES='YES', CLANG_ENABLE_OBJC_ARC='YES',
-    GCC_C_LANGUAGE_STANDARD='gnu11', CODE_SIGN_STYLE='Automatic', CURRENT_PROJECT_VERSION=1,
-    MARKETING_VERSION='1.0', EXPRESSIVE_BUNDLE_ID='org.expressive.keyboard.ios',
-    EXPRESSIVE_APP_GROUP='group.$(EXPRESSIVE_BUNDLE_ID)', ENABLE_USER_SCRIPT_SANDBOXING='YES',
+    GCC_C_LANGUAGE_STANDARD='gnu11', CODE_SIGN_STYLE='Automatic', CURRENT_PROJECT_VERSION=3,
+    MARKETING_VERSION='1.0.2', EXPRESSIVE_BUNDLE_ID='org.expressive.keyboard.ios',
+    EXPRESSIVE_APP_GROUP='', ENABLE_USER_SCRIPT_SANDBOXING='YES',
     SUPPORTED_PLATFORMS='iphoneos iphonesimulator', GCC_PREPROCESSOR_DEFINITIONS=['$(inherited)', 'CONFIG_VERSION=\\"2026-06-04\\"'],
     SWIFT_OBJC_BRIDGING_HEADER='Runtime/Bridge.h', OTHER_LDFLAGS=['$(inherited)', '-lsqlite3', '-lz'],
     SWIFT_ENABLE_BARE_SLASH_REGEX='YES',
@@ -74,7 +74,7 @@ sdk = configs('project', dict(
 def target_config(name, bundle, folder):
     return configs(name, dict(
         PRODUCT_NAME=name, PRODUCT_BUNDLE_IDENTIFIER=bundle, INFOPLIST_FILE=f'{folder}/Info.plist',
-        CODE_SIGN_ENTITLEMENTS=f'{folder}/Group.entitlements', GENERATE_INFOPLIST_FILE='NO',
+        GENERATE_INFOPLIST_FILE='NO',
         LD_RUNPATH_SEARCH_PATHS=['$(inherited)', '@executable_path/Frameworks', '@executable_path/../../Frameworks'],
         **(dict(ASSETCATALOG_COMPILER_APPICON_NAME='AppIcon') if folder == 'App'
            else dict(SKIP_INSTALL='YES', APPLICATION_EXTENSION_API_ONLY='YES'))

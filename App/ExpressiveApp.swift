@@ -42,6 +42,11 @@ struct SettingsView: View {
                         .listRowBackground(Color.clear)
                 }
                 Section(L("Set up", "Подключение")) {
+                    if !FileManager.default.fileExists(atPath: Bundle.main.builtInPlugInsURL?.appendingPathComponent("ExpressiveExtension.appex/Info.plist").path ?? "") {
+                        Text(L("Keyboard extension missing. Reinstall the IPA and keep app extensions when signing.",
+                               "Расширение клавиатуры отсутствует. Переустановите IPA, сохранив расширения при подписи."))
+                            .foregroundStyle(.red)
+                    }
                     if !preferences.setup {
                         Text(L("Add Expressive Keyboard in Settings → General → Keyboard → Keyboards → Add New Keyboard.",
                                "Добавьте Expressive Keyboard в Настройки → Основные → Клавиатура → Клавиатуры → Новые клавиатуры."))
@@ -52,6 +57,21 @@ struct SettingsView: View {
                             if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
                         }
                         Button(L("I’ve added the keyboard", "Я добавил клавиатуру")) { preferences.setup = true }
+                    }
+                    if SharedStore.sharedContainer == nil {
+                        Button(L("Copy settings for keyboard", "Скопировать настройки для клавиатуры")) {
+                            do {
+                                let data = try SharedStore.transfer(preferences)
+                                guard data.count <= 32_000_000 else { throw CocoaError(.fileReadTooLarge) }
+                                UIPasteboard.general.setItems([[SharedStore.transferType: data]],
+                                    options: [.localOnly: true, .expirationDate: Date().addingTimeInterval(300)])
+                                error = L("Open Expressive Keyboard → ▦ → Apply settings within five minutes.",
+                                          "В течение пяти минут откройте Expressive Keyboard → ▦ → Применить настройки.")
+                            } catch { self.error = error.localizedDescription }
+                        }
+                        Text(L("After changing settings, copy them here and apply them in the keyboard. Clipboard transfer needs Full Access. Quick settings are also available directly on the keyboard.",
+                               "После изменений скопируйте настройки здесь и примените их в клавиатуре. Для переноса через буфер нужен полный доступ. Быстрые настройки можно менять прямо на клавиатуре."))
+                            .font(.footnote)
                     }
                     TextField(L("Try typing here", "Попробуйте печатать здесь"), text: $trial, axis: .vertical)
                         .lineLimit(2...4)
@@ -345,7 +365,7 @@ struct SettingsView: View {
 
     private func persist() {
         do { try SharedStore.save(preferences) }
-        catch { self.error = L("Settings could not be saved. Check App Group signing in Xcode.", "Не удалось сохранить настройки. Проверьте подпись App Group в Xcode.") }
+        catch { self.error = L("Settings could not be saved. Check available device storage.", "Не удалось сохранить настройки. Проверьте свободное место на устройстве.") }
     }
 
     private var fileTypes: [UTType] {
