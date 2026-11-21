@@ -10,7 +10,7 @@ from pathlib import Path
 
 source = Path(sys.argv[1])
 root = Path(__file__).resolve().parents[1]
-resources = root / 'Resources'
+resources = root / 'KeyboardData'
 resources.mkdir(exist_ok=True)
 android = source / 'app/src/main'
 kotlin = android / 'java/com/expressive/keyboard'

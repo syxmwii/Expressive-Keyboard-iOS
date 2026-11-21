@@ -20,7 +20,7 @@ jobs:
           cp -R build/Build/Products/Release-iphoneos/ExpressiveKeyboard.app Payload/
           test -x Payload/ExpressiveKeyboard.app/ExpressiveKeyboard
           test -x Payload/ExpressiveKeyboard.app/PlugIns/ExpressiveExtension.appex/ExpressiveExtension
-          test -s Payload/ExpressiveKeyboard.app/PlugIns/ExpressiveExtension.appex/Resources/lexicon.sqlite3
+          test -s Payload/ExpressiveKeyboard.app/PlugIns/ExpressiveExtension.appex/KeyboardData/lexicon.sqlite3
           ditto -c -k --keepParent Payload ExpressiveKeyboard-unsigned.ipa
           shasum -a 256 ExpressiveKeyboard-unsigned.ipa > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4

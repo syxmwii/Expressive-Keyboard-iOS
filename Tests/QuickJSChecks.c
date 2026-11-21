@@ -37,8 +37,8 @@ int main(void) {
     int calls = 0;
     ERRuntime *runtime = ERCreate(host, &calls);
     assert(runtime);
-    load(runtime, "Resources/bootstrap.js");
-    load(runtime, "Resources/plugins/calculator.js");
+    load(runtime, "KeyboardData/bootstrap.js");
+    load(runtime, "KeyboardData/plugins/calculator.js");
     run(runtime, "__expressiveDispatch('$catalog').panels[0].id", "calc");
     run(runtime, "__expressiveDispatch('$render', 0).length", "4");
     run(runtime, "__expressiveDispatch('$panelPick', [0, '2'])", "undefined");

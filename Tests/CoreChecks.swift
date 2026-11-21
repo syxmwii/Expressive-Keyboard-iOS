@@ -4,7 +4,7 @@ import Foundation
 struct CoreChecks {
     static func main() throws {
         let root = URL(fileURLWithPath: CommandLine.arguments[1], isDirectory: true)
-        let resources = root.appendingPathComponent("Resources")
+        let resources = root.appendingPathComponent("KeyboardData")
         let layouts = try JSONDecoder().decode([KeyboardLayout].self, from: Data(contentsOf: resources.appendingPathComponent("layouts.json")))
         precondition(layouts.count == 205 && Set(layouts.map(\.id)).count == 205)
         precondition(layouts.allSatisfy { !$0.rows.isEmpty && $0.rows.allSatisfy { !$0.isEmpty } })

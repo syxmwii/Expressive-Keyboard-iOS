@@ -32,7 +32,7 @@ sourcepaths = {part: sorted(str(p.relative_to(root)) for p in (root/part).glob('
 sourcepaths['Runtime'] = ['Runtime/Bridge.c'] + sorted(str(p.relative_to(root)) for p in (root/'Runtime/quickjs').glob('*.c'))
 sourcefiles = {path: ref(path, 'sourcecode.c.c' if path.endswith('.c') else 'sourcecode.swift')
                for paths in sourcepaths.values() for path in paths}
-resource_folder = ref('Resources', 'folder')
+resource_folder = ref('KeyboardData', 'folder')
 assets = ref('App/Assets.xcassets', 'folder.assetcatalog')
 header = ref('Runtime/Bridge.h', 'sourcecode.c.h')
 products = add('products', 'PBXGroup', name='Products', sourceTree='<group>', children=[app, extension])

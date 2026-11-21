@@ -30,9 +30,9 @@ struct KeyboardLayout: Codable, Identifiable, Equatable {
 
 enum Resources {
     static func url(_ path: String) -> URL? {
-        let extensionResources = Bundle.main.builtInPlugInsURL?.appendingPathComponent("ExpressiveExtension.appex/Resources")
+        let extensionResources = Bundle.main.builtInPlugInsURL?.appendingPathComponent("ExpressiveExtension.appex/KeyboardData")
         let base = Bundle.main.bundleURL.pathExtension == "appex"
-            ? Bundle.main.resourceURL?.appendingPathComponent("Resources") : extensionResources
+            ? Bundle.main.resourceURL?.appendingPathComponent("KeyboardData") : extensionResources
         return base?.appendingPathComponent(path)
     }
 
