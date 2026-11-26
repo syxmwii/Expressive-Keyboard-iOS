@@ -48,7 +48,7 @@ final class ExpressiveButton: UIButton {
                 return
             }
             let scale = isHighlighted ? pressScale : 1
-            let sink = isHighlighted && pressMode == "sink" ? 1 : 0
+            let sink: CGFloat = isHighlighted && pressMode == "sink" ? 1 : 0
             UIView.animate(withDuration: 0.08) {
                 self.transform = CGAffineTransform(scaleX: scale, y: scale).translatedBy(x: 0, y: sink)
             }
