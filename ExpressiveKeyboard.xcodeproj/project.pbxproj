@@ -54,6 +54,13 @@
 			"path" = "Shared/Settings.swift";
 			"sourceTree" = "SOURCE_ROOT";
 		};
+		"4C88AE69E2BF7A63C18FC8DC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"name" = "Theme.swift";
+			"path" = "Shared/Theme.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
 		"CF6CB26C387356F5F138569C" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "sourcecode.swift";
@@ -192,6 +199,7 @@
 				"E6D499E5A7A39EA5A2E92CE7",
 				"7DC8D25780A96970BE97407B",
 				"A66ED4AC55373ACC89CC94C3",
+				"4C88AE69E2BF7A63C18FC8DC",
 			);
 		};
 		"CBE7D790BBE2BD0D8B77EF39" = {
@@ -382,6 +390,10 @@
 			"isa" = "PBXBuildFile";
 			"fileRef" = "A66ED4AC55373ACC89CC94C3";
 		};
+		"1C76648C911F20991397E453" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4C88AE69E2BF7A63C18FC8DC";
+		};
 		"6EBB5397E2899500B4AB5954" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "7998CCAF04990133DFDADA09";
@@ -417,6 +429,7 @@
 				"1C96B69BA7DB11C441BE298F",
 				"C0B959881FF55762C8B26488",
 				"2B76581C8884F36D6BFA563F",
+				"1C76648C911F20991397E453",
 				"6EBB5397E2899500B4AB5954",
 				"06A49136A86B48ABECFB29AF",
 				"F9DE646C6DC59BADC83CD5B0",
@@ -549,6 +562,10 @@
 			"isa" = "PBXBuildFile";
 			"fileRef" = "A66ED4AC55373ACC89CC94C3";
 		};
+		"1394171441B65090AA87BC88" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4C88AE69E2BF7A63C18FC8DC";
+		};
 		"99561599ED775F34528E5654" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "7998CCAF04990133DFDADA09";
@@ -588,6 +605,7 @@
 				"BD850CD9EF105175AD055506",
 				"3A5DA21A3A0A33313DB18A47",
 				"91D86DA6D94209750324DDD2",
+				"1394171441B65090AA87BC88",
 				"99561599ED775F34528E5654",
 				"2480E02B79624D45D0ABBF7B",
 				"3451619B3076412A4139A02D",
@@ -684,19 +702,9 @@
 				"TargetAttributes" = {
 					"0872D8097E5CAF6536A88511" = {
 						"CreatedOnToolsVersion" = "16.0";
-						"SystemCapabilities" = {
-							"com.apple.ApplicationGroups.iOS" = {
-								"enabled" = 1;
-							};
-						};
 					};
 					"C5F1BDE5905BADCD4FF20AEE" = {
 						"CreatedOnToolsVersion" = "16.0";
-						"SystemCapabilities" = {
-							"com.apple.ApplicationGroups.iOS" = {
-								"enabled" = 1;
-							};
-						};
 					};
 				};
 			};

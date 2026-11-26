@@ -33,8 +33,12 @@ extension KeyboardController {
         let number = max(-500, min(500, first as? Int ?? 0))
         let storageKey = "module." + plugin.id
         switch method {
-        case "subscribe": subscriptions[plugin.id, default: []].insert(text)
-        case "unsubscribe": subscriptions[plugin.id]?.remove(text)
+        case "subscribe":
+            subscriptions[plugin.id, default: []].insert(text)
+            if text == "frame" { updateFrameTimer() }
+        case "unsubscribe":
+            subscriptions[plugin.id]?.remove(text)
+            if text == "frame" { updateFrameTimer() }
         case "commit":
             insert(String(text.prefix(4_000)))
         case "deleteBefore":
@@ -174,7 +178,7 @@ extension KeyboardController {
             canvas.heightAnchor.constraint(equalToConstant: CGFloat(max(20, min(150, node["height"] as? Double ?? 90)))).isActive = true
             return canvas
         case "input":
-            let button = key(node["value"] as? String ?? text, style: 1, size: 14) { [weak self] in
+            let button = key(node["value"] as? String ?? text, role: .function, size: 14) { [weak self] in
                 guard let self else { return }
                 self.inputCallback = node["change"] as? Int
                 self.beginSearch(self.panel)
@@ -182,7 +186,7 @@ extension KeyboardController {
             button.heightAnchor.constraint(equalToConstant: 35).isActive = true
             return button
         case "button", "chip":
-            let button = key(text, style: node["accent"] as? Bool == true ? 2 : 1, size: 14) { invoke(NSNull()) }
+            let button = key(text, role: node["accent"] as? Bool == true ? .accent : .function, size: 14) { invoke(NSNull()) }
             button.heightAnchor.constraint(equalToConstant: 35).isActive = true
             return button
         default:

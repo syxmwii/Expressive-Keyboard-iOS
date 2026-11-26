@@ -6,6 +6,7 @@ final class ScriptRuntime {
     private var response: UnsafeMutablePointer<CChar>?
     private var host: (String, [Any]) -> Any?
     private(set) var error: String?
+    private(set) var lastEventError: String?
 
     init?(plugin: Plugin, host: @escaping (String, [Any]) -> Any?) {
         guard let script = plugin.script, let data = Resources.data("bootstrap.js"),
@@ -24,7 +25,11 @@ final class ScriptRuntime {
             return UnsafePointer(runtime.response)
         }, Unmanaged.passUnretained(self).toOpaque())
         guard handle != nil else { return nil }
-        _ = evaluate(bootstrap + "\n" + script, timeout: 120)
+        _ = run(bootstrap + "\n" + script, timeout: 120)
+        if let failure = lastEventError {
+            error = failure
+            lastEventError = nil
+        }
     }
 
     deinit {
@@ -32,19 +37,24 @@ final class ScriptRuntime {
         free(response)
     }
 
-    private func evaluate(_ script: String, timeout: Int32) -> String? {
-        guard let handle, error == nil else { return nil }
+    private func run(_ script: String, timeout: Int32) -> String? {
+        guard let handle else { return nil }
         var failed: Int32 = 0
         guard let result = EREval(handle, script, timeout, &failed) else { return nil }
         defer { ERFreeString(result) }
         let text = String(cString: result)
-        if failed != 0 { error = text; return nil }
+        guard failed == 0 else {
+            lastEventError = text
+            return nil
+        }
         return text
     }
 
     func event(_ name: String, _ value: Any = NSNull()) -> Any? {
-        guard let encoded = try? JSONSerialization.data(withJSONObject: [name, value]),
-              let text = evaluate("__expressiveJSON(__expressiveDispatch(...\(String(decoding: encoded, as: UTF8.self))))", timeout: 24)
+        lastEventError = nil
+        guard error == nil,
+              let encoded = try? JSONSerialization.data(withJSONObject: [name, value]),
+              let text = run("__expressiveJSON(__expressiveDispatch(...\(String(decoding: encoded, as: UTF8.self))))", timeout: 24)
         else { return nil }
         return try? JSONSerialization.jsonObject(with: Data(text.utf8), options: [.fragmentsAllowed])
     }

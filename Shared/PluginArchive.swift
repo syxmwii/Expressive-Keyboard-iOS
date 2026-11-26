@@ -25,8 +25,8 @@ enum PluginArchive {
             let method = number(offset + 10)
             let compressed = number(offset + 20, 4), size = number(offset + 24, 4)
             let local = number(offset + 42, 4)
-            guard files[name] == nil, number(offset + 8) & 1 == 0, (1...2_000_000).contains(size),
-                  compressed > 0, local >= 0, local + 30 <= end, number(local, 4) == 0x04034b50
+            guard files[name] == nil, number(offset + 8) & 1 == 0, (0...2_000_000).contains(size),
+                  compressed >= 0, local >= 0, local + 30 <= end, number(local, 4) == 0x04034b50
             else { throw Plugin.ImportError.archive }
             let start = local + 30 + number(local + 26) + number(local + 28)
             guard start + compressed <= end else { throw Plugin.ImportError.archive }

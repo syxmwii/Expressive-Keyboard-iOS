@@ -105,9 +105,7 @@ for name, folder, product, resources, bundle, kind in (
 
 rootid = add('root-project', 'PBXProject', attributes={
     'LastSwiftUpdateCheck': 1600, 'LastUpgradeCheck': 1600,
-    'TargetAttributes': {oid(name): {'CreatedOnToolsVersion': '16.0', 'SystemCapabilities': {
-        'com.apple.ApplicationGroups.iOS': {'enabled': 1}
-    }} for name in (tn_app, tn_ext)}
+    'TargetAttributes': {oid(name): {'CreatedOnToolsVersion': '16.0'} for name in (tn_app, tn_ext)}
 }, buildConfigurationList=sdk, compatibilityVersion='Xcode 14.0', developmentRegion='en',
             hasScannedForEncodings=0, knownRegions=['en', 'ru', 'Base'], mainGroup=main,
             productRefGroup=products, projectDirPath='', projectRoot='', targets=[oid(tn_app), oid(tn_ext)])
@@ -159,8 +157,6 @@ plist('Keyboard/Info.plist', dict(common_info, CFBundlePackageType='XPC!', NSExt
     'NSExtensionPrincipalClass': '$(PRODUCT_MODULE_NAME).KeyboardController',
     'NSExtensionAttributes': {'IsASCIICapable': True, 'PrefersRightToLeft': False, 'PrimaryLanguage': 'en-US', 'RequestsOpenAccess': True}
 }))
-for part in ('App', 'Keyboard'):
-    plist(f'{part}/Group.entitlements', {'com.apple.security.application-groups': ['$(EXPRESSIVE_APP_GROUP)']})
 
 app_assets = root/'App/Assets.xcassets'
 icons = app_assets/'AppIcon.appiconset'

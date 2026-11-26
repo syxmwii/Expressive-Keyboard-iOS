@@ -70,7 +70,7 @@ extension KeyboardController {
         ]
         let list = scroll()
         if SharedStore.sharedContainer == nil {
-            let apply = key(L("Apply settings from app", "Применить настройки из приложения"), style: 2, size: 15) { [weak self] in
+            let apply = key(L("Apply settings from app", "Применить настройки из приложения"), role: .accent, size: 15) { [weak self] in
                 guard let self else { return }
                 guard self.hasFullAccess else {
                     self.setStatus(L("Allow Full Access to import settings.", "Чтобы перенести настройки, разрешите полный доступ."))
@@ -88,7 +88,7 @@ extension KeyboardController {
             }
             apply.heightAnchor.constraint(equalToConstant: 39).isActive = true
             list.addArrangedSubview(apply)
-            let quick = key(L("Quick settings", "Быстрые настройки"), style: 1, size: 15)
+            let quick = key(L("Quick settings", "Быстрые настройки"), role: .function, size: 15)
             quick.menu = UIMenu(children: [
                 UIMenu(title: L("Design", "Оформление"), children: Design.allCases.map { design in
                     UIAction(title: design.title, state: design == preferences.design ? .on : .off) { [weak self] _ in
@@ -141,7 +141,7 @@ extension KeyboardController {
         for runtime in runtimes.values.sorted(by: { $0.plugin.id < $1.plugin.id }) {
             for (index, button) in (runtime.catalog["buttons"] ?? []).enumerated() {
                 if let title = button["title"] as? String {
-                    let action = key(title, style: 1, size: 14) { [weak self] in
+                    let action = key(title, role: .function, size: 14) { [weak self] in
                         _ = runtime.event("$button", index)
                         self?.updateHeader()
                     }
@@ -177,11 +177,11 @@ extension KeyboardController {
         let catalog = EmojiCatalog.shared
         let names = ["◷"] + catalog.groups.map { $0.1.first?.glyph ?? "☺" }
         let tabs = scroll(horizontal: true)
-        let search = key("⌕", style: 2, accessible: L("Search emoji", "Поиск эмодзи")) { [weak self] in self?.beginSearch(.emoji) }
+        let search = key("⌕", role: .accent, accessible: L("Search emoji", "Поиск эмодзи")) { [weak self] in self?.beginSearch(.emoji) }
         search.widthAnchor.constraint(equalToConstant: 42).isActive = true
         tabs.addArrangedSubview(search)
         for (index, glyph) in names.enumerated() {
-            let tab = key(glyph, style: category == index && searchText.isEmpty ? 2 : 1, size: 16) { [weak self] in
+            let tab = key(glyph, role: category == index && searchText.isEmpty ? .accent : .function, size: 16) { [weak self] in
                 self?.searchText = ""
                 self?.category = index
                 self?.renderPanel()
@@ -240,7 +240,7 @@ extension KeyboardController {
             list.addArrangedSubview(label(L("Clipboard history is paused in incognito.", "В инкогнито история буфера приостановлена.")))
             return
         }
-        let read = key(L("Read clipboard", "Прочитать буфер"), style: 2, size: 14) { [weak self] in
+        let read = key(L("Read clipboard", "Прочитать буфер"), role: .accent, size: 14) { [weak self] in
             guard let self else { return }
             guard let value = UIPasteboard.general.string, !value.isEmpty else {
                 self.setStatus(L("The clipboard is empty or unavailable.", "Буфер пуст или недоступен."))
@@ -257,7 +257,7 @@ extension KeyboardController {
         list.addArrangedSubview(read)
         for value in Array(NSOrderedSet(array: snippets + clipboard)).compactMap({ $0 as? String }) {
             let button = key(String(value.prefix(58)), size: 14) { [weak self] in self?.insert(value) }
-            let pin = key(snippets.contains(value) ? "★" : "☆", style: 1, accessible: L("Pin", "Закрепить")) { [weak self] in
+            let pin = key(snippets.contains(value) ? "★" : "☆", role: .function, accessible: L("Pin", "Закрепить")) { [weak self] in
                 guard let self else { return }
                 if self.snippets.contains(value) { self.snippets.removeAll { $0 == value } }
                 else { self.snippets = [value] + Array(self.snippets.prefix(19)) }
@@ -265,7 +265,7 @@ extension KeyboardController {
                 self.renderPanel()
             }
             pin.widthAnchor.constraint(equalToConstant: 41).isActive = true
-            let remove = key("×", style: 1, accessible: L("Remove", "Удалить")) { [weak self] in
+            let remove = key("×", role: .function, accessible: L("Remove", "Удалить")) { [weak self] in
                 guard let self else { return }
                 self.clipboard.removeAll { $0 == value }
                 self.snippets.removeAll { $0 == value }
@@ -285,16 +285,19 @@ extension KeyboardController {
         guard !privateInput else { list.addArrangedSubview(label(L("Plugins are paused in incognito.", "Плагины приостановлены в инкогнито."))); return }
         for plugin in preferences.activePlugins {
             let catalog = runtimes[plugin.id]?.catalog["panels"] ?? []
-            guard !plugin.actions.isEmpty || !plugin.symbols.isEmpty || !catalog.isEmpty || runtimes[plugin.id]?.error != nil else { continue }
+            guard !plugin.actions.isEmpty || !plugin.symbols.isEmpty || !catalog.isEmpty
+                || runtimes[plugin.id]?.error != nil || runtimes[plugin.id]?.lastEventError != nil else { continue }
             list.addArrangedSubview(label(plugin.name, size: 13))
             for (index, panel) in catalog.enumerated() {
-                let button = key(panel["title"] as? String ?? plugin.name, style: 1, size: 14) { [weak self] in
+                let button = key(panel["title"] as? String ?? plugin.name, role: .function, size: 14) { [weak self] in
                     self?.switchPanel(.script(plugin.id, index))
                 }
                 button.heightAnchor.constraint(equalToConstant: 36).isActive = true
                 list.addArrangedSubview(button)
             }
-            if let error = runtimes[plugin.id]?.error { list.addArrangedSubview(label(error, size: 11)) }
+            if let message = runtimes[plugin.id]?.error ?? runtimes[plugin.id]?.lastEventError {
+                list.addArrangedSubview(label(message, size: 11))
+            }
             for index in stride(from: 0, to: plugin.actions.count, by: 3) {
                 let buttons = plugin.actions[index..<min(index + 3, plugin.actions.count)].map { action in
                     self.key(action.title, size: 11) { [weak self] in self?.run(action) }
@@ -330,8 +333,8 @@ extension KeyboardController {
             }
         case "paste":
             if let text = UIPasteboard.general.string { insert(text) }
-        case "home": textDocumentProxy.adjustTextPosition(byCharacterOffset: -context.count)
-        case "end": textDocumentProxy.adjustTextPosition(byCharacterOffset: textDocumentProxy.documentContextAfterInput?.count ?? 0)
+        case "home": textDocumentProxy.adjustTextPosition(byCharacterOffset: -(context as NSString).length)
+        case "end": textDocumentProxy.adjustTextPosition(byCharacterOffset: ((textDocumentProxy.documentContextAfterInput ?? "") as NSString).length)
         case "left": textDocumentProxy.adjustTextPosition(byCharacterOffset: -1)
         case "right": textDocumentProxy.adjustTextPosition(byCharacterOffset: 1)
         case "delete_word": deleteWord()
@@ -349,7 +352,7 @@ extension KeyboardController {
     }
 
     func showGIFs() {
-        let search = key(searchText.isEmpty ? L("Search GIFs", "Поиск GIF") : searchText, style: 2, size: 14) { [weak self] in self?.beginSearch(.gifs) }
+        let search = key(searchText.isEmpty ? L("Search GIFs", "Поиск GIF") : searchText, role: .accent, size: 14) { [weak self] in self?.beginSearch(.gifs) }
         search.heightAnchor.constraint(equalToConstant: 33).isActive = true
         content.addArrangedSubview(search)
         let list = scroll()
@@ -429,8 +432,8 @@ extension KeyboardController {
         let list = scroll()
         let source = searchText.isEmpty ? (textDocumentProxy.selectedText ?? "") : searchText
         list.addArrangedSubview(label(source.isEmpty ? L("Select text or type a phrase.", "Выделите текст или введите фразу.") : source))
-        let input = key(L("Type a phrase", "Ввести фразу"), style: 1, size: 14) { [weak self] in self?.beginSearch(.translate) }
-        let translate = key(L("Translate to", "Перевести на") + " " + preferences.translationTarget.uppercased(), style: 2, size: 14) { [weak self] in
+        let input = key(L("Type a phrase", "Ввести фразу"), role: .function, size: 14) { [weak self] in self?.beginSearch(.translate) }
+        let translate = key(L("Translate to", "Перевести на") + " " + preferences.translationTarget.uppercased(), role: .accent, size: 14) { [weak self] in
             self?.translate(source)
         }
         let actions = row([input, translate])
@@ -438,7 +441,7 @@ extension KeyboardController {
         list.addArrangedSubview(actions)
         if !translation.isEmpty {
             list.addArrangedSubview(label(translation))
-            let insert = key(L("Insert translation", "Вставить перевод"), style: 1, size: 14) { [weak self] in
+            let insert = key(L("Insert translation", "Вставить перевод"), role: .function, size: 14) { [weak self] in
                 if let self { self.insert(self.translation); self.switchPanel(.typing) }
             }
             insert.heightAnchor.constraint(equalToConstant: 36).isActive = true
@@ -470,26 +473,41 @@ extension KeyboardController {
 
     func showVoice() {
         let list = scroll()
-        list.addArrangedSubview(label(L("Record in Expressive Keyboard, then return here and insert the transcript.",
-                                       "Запишите фразу в Expressive Keyboard, затем вернитесь сюда и вставьте расшифровку.")))
+        list.addArrangedSubview(label(L("Record in Expressive Keyboard, copy the transcript and paste it here.",
+                                       "Запишите фразу в Expressive Keyboard, скопируйте расшифровку и вставьте её здесь.")))
         if let transcript = SharedStore.read(String.self, "dictation.json"), !transcript.isEmpty {
             list.addArrangedSubview(label(transcript))
-            let button = key(L("Insert transcript", "Вставить расшифровку"), style: 2, size: 14) { [weak self] in
+            let button = key(L("Insert transcript", "Вставить расшифровку"), role: .accent, size: 14) { [weak self] in
                 self?.insert(transcript)
                 self?.switchPanel(.typing)
             }
             button.heightAnchor.constraint(equalToConstant: 38).isActive = true
             list.addArrangedSubview(button)
         }
+        let paste = key(L("Paste from clipboard", "Вставить из буфера"), role: .accent, size: 14) { [weak self] in
+            guard let self else { return }
+            guard self.hasFullAccess else {
+                self.setStatus(L("Pasting needs Full Access.", "Для вставки нужен полный доступ."))
+                return
+            }
+            guard let text = UIPasteboard.general.string, !text.isEmpty else {
+                self.setStatus(L("The clipboard is empty or unavailable.", "Буфер пуст или недоступен."))
+                return
+            }
+            self.insert(String(text.prefix(4_000)))
+            self.switchPanel(.typing)
+        }
+        paste.heightAnchor.constraint(equalToConstant: 38).isActive = true
+        list.addArrangedSubview(paste)
     }
 
     func setStatus(_ message: String) {
-        status = String(message.prefix(120))
+        let value = String(message.prefix(120))
+        status = value
         updateHeader()
-        if !message.isEmpty {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) { [weak self] in
-                if self?.status == message { self?.status = ""; self?.updateHeader() }
-            }
+        guard !value.isEmpty else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) { [weak self] in
+            if self?.status == value { self?.status = ""; self?.updateHeader() }
         }
     }
 }

@@ -1,63 +1,5 @@
 import UIKit
 
-struct KeyboardTheme {
-    let background: UIColor
-    let key: UIColor
-    let text: UIColor
-    let function: UIColor
-    let functionText: UIColor
-    let accent: UIColor
-    let accentText: UIColor
-    let border: UIColor
-    let secondaryBackground: UIColor?
-    let design: Design
-
-    init(_ preferences: Preferences, dark: Bool) {
-        design = preferences.design
-        let fileSkin = preferences.design.skinFile
-            .flatMap { Resources.data("plugins/\($0).json") }
-            .flatMap { try? Plugin.load($0, type: "json") }?.skin
-        let selected = preferences.activePlugins.first { $0.id == preferences.skinPlugin }
-        let skin = selected?.skin ?? fileSkin
-        let colors = skin?["colors"] as? [String: Any] ?? [:]
-        func pick(_ name: String, _ fallback: UIColor) -> UIColor {
-            if let value = colors[name] as? String { return UIColor(hex: value) ?? fallback }
-            if let value = colors[name] as? [String: String] {
-                return (value[dark ? "dark" : "light"]).flatMap(UIColor.init(hex:)) ?? fallback
-            }
-            return fallback
-        }
-        let backgroundData = (skin?["keyboard"] as? [String: Any])?["background"] as? [String: Any]
-        let gradient = (backgroundData?["colors"] as? [String] ?? []).compactMap(UIColor.init(hex:))
-        background = gradient.first ?? pick("background", dark ? UIColor(hex: "#211E2C")! : UIColor(hex: "#ECE7F8")!)
-        secondaryBackground = gradient.dropFirst().first
-        key = pick("key", dark ? UIColor(hex: "#393445")! : UIColor(hex: "#FFFBFF")!)
-        text = pick("keyText", dark ? UIColor(hex: "#F3EDFF")! : UIColor(hex: "#241A38")!)
-        function = pick("func", dark ? UIColor(hex: "#504563")! : UIColor(hex: "#DBD1F0")!)
-        functionText = pick("funcText", text)
-        accent = UIColor(hex: preferences.tint) ?? pick("accent", dark ? UIColor(hex: "#D0BCFF")! : UIColor(hex: "#6C49AB")!)
-        if preferences.tint.isEmpty {
-            accentText = pick("accentText", dark ? UIColor(hex: "#2F164E")! : .white)
-        } else {
-            var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
-            accent.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-            accentText = red * 0.299 + green * 0.587 + blue * 0.114 > 0.60 ? .black : .white
-        }
-        border = design == .neon ? accent.withAlphaComponent(0.55) : .clear
-    }
-}
-
-extension UIColor {
-    convenience init?(hex: String) {
-        let value = hex.trimmingCharacters(in: CharacterSet(charactersIn: "#").union(.whitespacesAndNewlines))
-        guard [6, 8].contains(value.count), let number = UInt32(value, radix: 16) else { return nil }
-        self.init(red: CGFloat((number >> 16) & 255) / 255,
-                  green: CGFloat((number >> 8) & 255) / 255,
-                  blue: CGFloat(number & 255) / 255,
-                  alpha: value.count == 8 ? CGFloat((number >> 24) & 255) / 255 : 1)
-    }
-}
-
 final class ExpressiveButton: UIButton {
     var hold: (() -> Void)? {
         didSet {
@@ -71,7 +13,14 @@ final class ExpressiveButton: UIButton {
     }
     var action: (() -> Void)?
     var value: String?
-    var variantValues: [String] = []
+    var pressedColor: UIColor?
+    var pressMode = "none"
+    var pressScale: CGFloat = 1
+    var idleRadius: CGFloat = 0
+    var pressedRadius: CGFloat?
+    var shadow: (radius: CGFloat, y: CGFloat, color: UIColor)? {
+        didSet { applyShadow() }
+    }
     private var consumedHold = false
     var baseColor = UIColor.clear { didSet { backgroundColor = baseColor } }
 
@@ -89,8 +38,27 @@ final class ExpressiveButton: UIButton {
 
     override var isHighlighted: Bool {
         didSet {
-            backgroundColor = isHighlighted ? baseColor.withAlphaComponent(0.65) : baseColor
+            backgroundColor = isHighlighted ? (pressedColor ?? baseColor.withAlphaComponent(0.65)) : baseColor
+            if let pressedRadius {
+                layer.cornerRadius = isHighlighted ? pressedRadius : idleRadius
+                setNeedsLayout()
+            }
+            guard pressMode != "none" else {
+                transform = .identity
+                return
+            }
+            let scale = isHighlighted ? pressScale : 1
+            let sink = isHighlighted && pressMode == "sink" ? 1 : 0
+            UIView.animate(withDuration: 0.08) {
+                self.transform = CGAffineTransform(scaleX: scale, y: scale).translatedBy(x: 0, y: sink)
+            }
         }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        guard layer.shadowOpacity > 0 else { return }
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
     }
 
     func symbol(_ name: String, size: CGFloat = 18) {
@@ -98,6 +66,18 @@ final class ExpressiveButton: UIButton {
         setTitle(nil, for: .normal)
         setImage(image, for: .normal)
         tintColor = titleColor(for: .normal)
+    }
+
+    private func applyShadow() {
+        guard let shadow, shadow.radius > 0 else {
+            layer.shadowOpacity = 0
+            return
+        }
+        layer.shadowColor = shadow.color.cgColor
+        layer.shadowOpacity = Float(shadow.color.cgColor.alpha)
+        layer.shadowRadius = shadow.radius
+        layer.shadowOffset = CGSize(width: 0, height: shadow.y)
+        setNeedsLayout()
     }
 
     @objc private func reset() { consumedHold = false }

@@ -38,6 +38,7 @@ int main(void) {
     ERRuntime *runtime = ERCreate(host, &calls);
     assert(runtime);
     load(runtime, "KeyboardData/bootstrap.js");
+    run(runtime, "typeof kb.tone", "function");
     load(runtime, "KeyboardData/plugins/calculator.js");
     run(runtime, "__expressiveDispatch('$catalog').panels[0].id", "calc");
     run(runtime, "__expressiveDispatch('$render', 0).length", "4");

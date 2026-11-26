@@ -50,6 +50,7 @@
         haptic: () => call('haptic'),
         speak: text => call('speak', text),
         stopSpeaking: () => call('stopSpeaking'),
+        tone: no,
         keyboardSize: () => call('size'),
         device: () => call('device'),
         input: requestInput,

@@ -29,10 +29,17 @@ struct KeyboardLayout: Codable, Identifiable, Equatable {
 }
 
 enum Resources {
+    private static let extensionBundle: URL? = {
+        guard let plugins = Bundle.main.builtInPlugInsURL,
+              let items = try? FileManager.default.contentsOfDirectory(at: plugins, includingPropertiesForKeys: nil)
+        else { return nil }
+        return items.first { $0.pathExtension == "appex" }
+    }()
+
     static func url(_ path: String) -> URL? {
-        let extensionResources = Bundle.main.builtInPlugInsURL?.appendingPathComponent("ExpressiveExtension.appex/KeyboardData")
         let base = Bundle.main.bundleURL.pathExtension == "appex"
-            ? Bundle.main.resourceURL?.appendingPathComponent("KeyboardData") : extensionResources
+            ? Bundle.main.resourceURL?.appendingPathComponent("KeyboardData")
+            : extensionBundle?.appendingPathComponent("KeyboardData")
         return base?.appendingPathComponent(path)
     }
 
@@ -117,6 +124,51 @@ struct Preferences: Codable {
     var hasPhoto = false
     var hasFont = false
     var setup = false
+
+    init() {}
+
+    enum CodingKeys: String, CodingKey {
+        case design, shapes, languages, layouts, height, spacing, radius, width, hand, numberRow
+        case suggestions, autocorrect, autoCap, glide, haptics, intensity, sound, incognito, learn
+        case emojiStyle, tint, gifKey, translationTarget, plugins, disabledPlugins, skinPlugin
+        case hasPhoto, hasFont, setup
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        func value<T: Decodable>(_ key: CodingKeys, _ fallback: T) -> T {
+            return (try? container.decodeIfPresent(T.self, forKey: key)) ?? fallback
+        }
+        design = value(.design, Design.expressive)
+        shapes = value(.shapes, 1)
+        languages = value(.languages, ["en", "ru"])
+        layouts = value(.layouts, [String: [[String]]]())
+        height = value(.height, 46.0)
+        spacing = value(.spacing, 4.0)
+        radius = value(.radius, 16.0)
+        width = value(.width, 1.0)
+        hand = value(.hand, 0)
+        numberRow = value(.numberRow, false)
+        suggestions = value(.suggestions, true)
+        autocorrect = value(.autocorrect, true)
+        autoCap = value(.autoCap, true)
+        glide = value(.glide, true)
+        haptics = value(.haptics, true)
+        intensity = value(.intensity, 0.5)
+        sound = value(.sound, false)
+        incognito = value(.incognito, false)
+        learn = value(.learn, true)
+        emojiStyle = value(.emojiStyle, "system")
+        tint = value(.tint, "")
+        gifKey = value(.gifKey, "")
+        translationTarget = value(.translationTarget, "en")
+        plugins = value(.plugins, [Plugin]())
+        disabledPlugins = value(.disabledPlugins, Set<String>())
+        skinPlugin = value(.skinPlugin, "")
+        hasPhoto = value(.hasPhoto, false)
+        hasFont = value(.hasFont, false)
+        setup = value(.setup, false)
+    }
 
     mutating func normalize() {
         height = min(max(height, 34), 62)

@@ -40,6 +40,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     var pendingNetwork: Task<Void, Never>?
     var runtimes: [String: ScriptRuntime] = [:]
     var frameTimer: Timer?
+    var orbLayers: [CAGradientLayer] = []
     var subscriptions: [String: Set<String>] = [:]
     var enabledPlugins: [Plugin] = []
     var variantMap: [String: [String]] = [:]
@@ -125,8 +126,13 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         reload()
         emit("show")
         emit("start", ["type": textDocumentProxy.keyboardType?.rawValue ?? 0])
+        updateFrameTimer()
+    }
+
+    func updateFrameTimer() {
         frameTimer?.invalidate()
-        guard subscriptions.values.contains(where: { $0.contains("frame") }) else { return }
+        frameTimer = nil
+        guard !privateInput, subscriptions.values.contains(where: { $0.contains("frame") }) else { return }
         frameTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / 30, repeats: true) { [weak self] _ in
             guard let self, !self.runtimes.isEmpty else { return }
             self.emit("frame", 33)
@@ -148,6 +154,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         gradient.frame = view.bounds
         photo.frame = view.bounds
         overlay.frame = view.bounds
+        layoutOrbs()
         updateHeight()
     }
 
@@ -182,6 +189,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     }
 
     var numericMode: Bool { [.numberPad, .decimalPad, .phonePad, .namePhonePad, .asciiCapableNumberPad].contains(keyboardType) }
+    var plainTextEntry: Bool { keyboardType == .default || keyboardType == .asciiCapable || keyboardType == .twitter }
     var context: String { textDocumentProxy.documentContextBeforeInput ?? "" }
     var prefix: String {
         String(context.reversed().prefix { $0.isLetter || $0 == "'" || $0 == "’" }.reversed())
@@ -214,6 +222,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             fontName = nil
         }
         if !privateInput { loadScripts() } else { runtimes.removeAll(); captureTouches = false }
+        updateFrameTimer()
         redraw()
     }
 
@@ -225,39 +234,96 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
 
     func redraw() {
         theme = KeyboardTheme(preferences, dark: traitCollection.userInterfaceStyle == .dark)
-        view.backgroundColor = theme.background
-        gradient.colors = [theme.background.cgColor, (theme.secondaryBackground ?? theme.background).cgColor]
+        if let pattern = theme.pattern {
+            gradient.isHidden = true
+            view.backgroundColor = UIColor(patternImage: pattern)
+        } else {
+            gradient.isHidden = false
+            view.backgroundColor = theme.background
+            gradient.colors = [theme.background.cgColor, (theme.secondaryBackground ?? theme.background).cgColor]
+        }
+        updateOrbs()
         updateHeight()
         updateHeader()
         renderPanel()
+    }
+
+    func updateOrbs() {
+        for layer in orbLayers { layer.removeFromSuperlayer() }
+        orbLayers.removeAll()
+        guard !theme.orbs.isEmpty, view.bounds.width > 0 else { return }
+        for orb in theme.orbs {
+            let layer = CAGradientLayer()
+            layer.type = .radial
+            layer.colors = [orb.color.cgColor, orb.color.withAlphaComponent(0).cgColor]
+            layer.startPoint = CGPoint(x: 0.5, y: 0.5)
+            layer.endPoint = CGPoint(x: 1, y: 1)
+            view.layer.insertSublayer(layer, at: 1 + orbLayers.count)
+            orbLayers.append(layer)
+        }
+        layoutOrbs()
+    }
+
+    func layoutOrbs() {
+        for (index, layer) in orbLayers.enumerated() {
+            guard theme.orbs.indices.contains(index) else { break }
+            let orb = theme.orbs[index]
+            let size = max(1, view.bounds.width * orb.radius)
+            layer.frame = CGRect(x: view.bounds.width * orb.x - size / 2,
+                                 y: view.bounds.height * orb.y - size / 2,
+                                 width: size, height: size)
+            layer.cornerRadius = size / 2
+        }
     }
 
     func clear(_ stack: UIStackView) {
         for child in stack.arrangedSubviews { stack.removeArrangedSubview(child); child.removeFromSuperview() }
     }
 
-    func key(_ label: String, style: Int = 0, size: CGFloat = 21, accessible: String? = nil,
+    func key(_ label: String, role: KeyRole = .normal, size: CGFloat = 21, accessible: String? = nil,
              action: (() -> Void)? = nil) -> ExpressiveButton {
+        let style = theme.style(role)
         let button = ExpressiveButton(frame: .zero)
         button.action = action
         button.accessibilityLabel = accessible ?? label
         button.setTitle(label, for: .normal)
-        button.setTitleColor(style == 2 ? theme.accentText : style == 1 ? theme.functionText : theme.text, for: .normal)
-        button.baseColor = style == 2 ? theme.accent : style == 1 ? theme.function : theme.key
-        button.layer.cornerRadius = CGFloat(preferences.radius)
-        button.layer.borderWidth = preferences.design == .neon ? 0.8 : 0
-        button.layer.borderColor = theme.border.cgColor
-        if let fontName, let custom = UIFont(name: fontName, size: size) {
+        button.setTitleColor(style.text, for: .normal)
+        button.setTitleColor(style.pressedText, for: .highlighted)
+        button.baseColor = style.background
+        button.pressedColor = style.pressedBackground
+        button.pressMode = style.press
+        button.pressScale = style.pressScale
+        button.layer.cornerRadius = style.radius
+        button.layer.borderWidth = style.borderWidth
+        button.layer.borderColor = style.border.cgColor
+        button.shadow = (style.shadow, style.shadowY, style.shadowColor)
+        let pointSize = size * style.fontScale
+        if let fontName, let custom = UIFont(name: fontName, size: pointSize) {
             button.titleLabel?.font = custom
         } else {
-            let weighted = UIFont.systemFont(ofSize: size, weight: style == 0 ? .medium : .semibold)
-            let choice = preferences.design == .expressive ? weighted.fontDescriptor.withDesign(.rounded) : nil
-            button.titleLabel?.font = choice.map { UIFont(descriptor: $0, size: size) } ?? weighted
+            let weighted = theme.monospaced
+                ? UIFont.monospacedSystemFont(ofSize: pointSize, weight: style.fontWeight)
+                : UIFont.systemFont(ofSize: pointSize, weight: style.fontWeight)
+            let choice = preferences.design == .expressive && !theme.monospaced
+                ? weighted.fontDescriptor.withDesign(.rounded) : nil
+            button.titleLabel?.font = choice.map { UIFont(descriptor: $0, size: pointSize) } ?? weighted
         }
-        if preferences.design == .expressive && (preferences.shapes == 2 || (style == 2 && preferences.shapes == 1)) {
+        if let shadow = style.textShadow {
+            button.titleLabel?.layer.shadowColor = shadow.cgColor
+            button.titleLabel?.layer.shadowOffset = CGSize(width: 0, height: 1)
+            button.titleLabel?.layer.shadowRadius = 0
+            button.titleLabel?.layer.masksToBounds = false
+        }
+        let shaped = preferences.design == .expressive
+            && (preferences.shapes == 2 || ((role == .accent || role == .enter) && preferences.shapes == 1))
+        var radius = style.radius
+        if shaped {
             button.layer.cornerCurve = .continuous
-            button.layer.cornerRadius = min(22, CGFloat(preferences.radius) + 4)
+            radius = min(22, style.radius + 4)
         }
+        button.layer.cornerRadius = radius
+        button.idleRadius = radius
+        button.pressedRadius = shaped ? min(22, style.pressedRadius) : style.pressedRadius
         return button
     }
 
@@ -303,7 +369,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         case .typing: title = pendingSearch == nil ? "▦" : "×"
         default: title = "‹"
         }
-        let menu = key(title, style: 1, size: 23, accessible: L("Keyboard tools", "Инструменты клавиатуры")) { [weak self] in
+        let menu = key(title, role: .function, size: 23, accessible: L("Keyboard tools", "Инструменты клавиатуры")) { [weak self] in
             guard let self else { return }
             if case .typing = self.panel {
                 if let previous = self.pendingSearch {
@@ -320,7 +386,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         header.addArrangedSubview(menu)
         if let search = pendingSearch, case .typing = panel {
             header.addArrangedSubview(label(searchText.isEmpty ? L("Type here…", "Введите текст…") : searchText))
-            header.addArrangedSubview(key("↵", style: 2) { [weak self] in self?.completeSearch(search) })
+            header.addArrangedSubview(key("↵", role: .accent) { [weak self] in self?.completeSearch(search) })
             return
         }
         if case .typing = panel {
@@ -328,7 +394,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             if values.isEmpty {
                 let title = privateInput ? L("Incognito", "Инкогнито") : language.space
                 header.addArrangedSubview(label(status.isEmpty ? title : status))
-                let emoji = key("☺", style: 1, accessible: L("Emoji", "Эмодзи")) { [weak self] in self?.switchPanel(.emoji) }
+                let emoji = key("☺", role: .function, accessible: L("Emoji", "Эмодзи")) { [weak self] in self?.switchPanel(.emoji) }
                 emoji.widthAnchor.constraint(equalToConstant: 38).isActive = true
                 header.addArrangedSubview(emoji)
             } else {
@@ -420,11 +486,15 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             if last && !numeric {
                 let capital = shift > 0 || autoShift
                 let shiftButton = key(symbols > 0 ? (symbols == 1 ? "#+=" : "123") : (shift == 2 ? "⇪" : "⇧"),
-                                      style: symbols == 0 && capital ? 2 : 1, size: 19, accessible: L("Shift", "Регистр")) { [weak self] in
+                                      role: .shift, size: 19, accessible: L("Shift", "Регистр")) { [weak self] in
                     self?.toggleShift()
                 }
                 if symbols == 0 {
                     shiftKey = shiftButton
+                    if capital {
+                        shiftButton.baseColor = theme.accent
+                        shiftButton.setTitleColor(theme.accentText, for: .normal)
+                    }
                     shiftButton.symbol(shift == 2 ? "capslock.fill" : capital ? "shift.fill" : "shift")
                 }
                 buttons.append(shiftButton)
@@ -466,16 +536,16 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         guard !numeric else { return }
         let bottom = UIStackView()
         bottom.spacing = CGFloat(preferences.spacing)
-        let numbers = key(symbols == 0 ? "123" : "ABC", style: 1, size: 14) { [weak self] in
+        let numbers = key(symbols == 0 ? "123" : "ABC", role: .mode, size: 14) { [weak self] in
             guard let self else { return }
             self.finish()
             self.symbols = self.symbols == 0 ? 1 : 0
             self.redraw()
         }
-        let languageKey = key(language.label, style: 1, size: 12, accessible: L("Language", "Язык")) { [weak self] in
+        let languageKey = key(language.label, role: .mode, size: 12, accessible: L("Language", "Язык")) { [weak self] in
             self?.nextLanguage()
         }
-        let space = key(pendingSearch == nil ? language.space : "␣", size: 15, accessible: L("Space", "Пробел")) { [weak self] in
+        let space = key(pendingSearch == nil ? language.space : "␣", role: .space, size: 15, accessible: L("Space", "Пробел")) { [weak self] in
             self?.space()
         }
         space.hold = { [weak self] in
@@ -485,7 +555,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
         }
         let cursor = UIPanGestureRecognizer(target: self, action: #selector(moveOnSpace(_:)))
         space.addGestureRecognizer(cursor)
-        let punctuation = key(keyboardType == .emailAddress ? "@" : ".", style: 1) { [weak self] in
+        let punctuation = key(keyboardType == .emailAddress ? "@" : ".", role: .function) { [weak self] in
             guard let self else { return }
             self.type(self.keyboardType == .emailAddress ? "@" : ".")
         }
@@ -495,11 +565,11 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             self.panel = .variants
             self.redraw()
         }
-        let enter = key(returnLabel, style: 2, size: 17, accessible: L("Return", "Ввод")) { [weak self] in self?.enter() }
+        let enter = key(returnLabel, role: .enter, size: 17, accessible: L("Return", "Ввод")) { [weak self] in self?.enter() }
         if returnLabel == "↵" { enter.symbol("return") }
         var keys = [numbers, languageKey, space, punctuation, enter]
         if needsInputModeSwitchKey {
-            let globe = key("◎", style: 1, size: 19, accessible: L("Next keyboard", "Следующая клавиатура"))
+            let globe = key("◎", role: .function, size: 19, accessible: L("Next keyboard", "Следующая клавиатура"))
             globe.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
             keys.insert(globe, at: 1)
         }
@@ -523,14 +593,14 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     }
 
     func deleteKey() -> ExpressiveButton {
-        let button = key("⌫", style: 1, accessible: L("Delete", "Удалить")) { [weak self] in self?.backspace() }
+        let button = key("⌫", role: .function, accessible: L("Delete", "Удалить")) { [weak self] in self?.backspace() }
         button.hold = { [weak self] in self?.deleteWord() }
         return button
     }
 
     var autoShift: Bool {
         guard pendingSearch == nil, preferences.autoCap, language.hasCase, !cjk, shift == 0,
-              (textDocumentProxy.autocapitalizationType ?? .sentences) != .none, keyboardType == .default || keyboardType == .twitter
+              (textDocumentProxy.autocapitalizationType ?? .sentences) != .none, plainTextEntry
         else { return false }
         let value = context
         if textDocumentProxy.autocapitalizationType == .allCharacters { return true }
@@ -551,8 +621,9 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             }
         }
         if let button = shiftKey {
-            button.baseColor = capital ? theme.accent : theme.function
-            button.setTitleColor(capital ? theme.accentText : theme.functionText, for: .normal)
+            let style = theme.style(.shift)
+            button.baseColor = capital ? theme.accent : style.background
+            button.setTitleColor(capital ? theme.accentText : style.text, for: .normal)
             button.symbol(shift == 2 ? "capslock.fill" : capital ? "shift.fill" : "shift")
         }
         updateHeader()
@@ -822,8 +893,14 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
     @objc func trackGlide(_ pan: UIPanGestureRecognizer) {
         let point = pan.location(in: view)
         if captureTouches {
-            let kind = pan.state == .began ? "down" : pan.state == .changed ? "move" : "up"
-            emit("touch", ["type": kind, "x": point.x, "y": point.y, "pointer": 0], needsText: true)
+            let kind: String
+            switch pan.state {
+            case .began: kind = "down"
+            case .changed: kind = "move"
+            case .ended: kind = "up"
+            default: kind = "cancel"
+            }
+            emit("touch", ["type": kind, "x": point.x, "y": point.y, "pointer": 0])
             return
         }
         if pan.state == .began {
@@ -836,7 +913,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             points.append(point)
             if let letter = button(at: point)?.value, path.last != letter { path.append(letter) }
             overlay.trail = points
-            overlay.trailColor = theme.accent
+            overlay.trailColor = theme.trail
         }
         if pan.state == .ended || pan.state == .cancelled {
             defer { overlay.trail = []; points = []; path = [] }

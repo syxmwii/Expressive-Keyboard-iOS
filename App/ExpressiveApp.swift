@@ -30,6 +30,7 @@ struct SettingsView: View {
     @State private var confirmPlugin = false
     @State private var export = false
     @Environment(\.openURL) private var openURL
+    @Environment(\.colorScheme) private var colorScheme
 
     private let accent = Color(red: 0.43, green: 0.30, blue: 0.71)
 
@@ -130,6 +131,13 @@ struct SettingsView: View {
         ) { Button("OK") { error = "" } } message: { Text(error) }
     }
 
+    private var skinTitle: String {
+        guard let skin = preferences.activePlugins.first(where: { $0.id == preferences.skinPlugin }) else {
+            return preferences.design.title
+        }
+        return "\(preferences.design.title) · \(skin.name)"
+    }
+
     private var hero: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack(spacing: 12) {
@@ -139,7 +147,7 @@ struct SettingsView: View {
                     .background(.white.opacity(0.17), in: RoundedRectangle(cornerRadius: 16))
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Expressive Keyboard").font(.title2.weight(.semibold))
-                    Text(preferences.design.title).font(.subheadline)
+                    Text(skinTitle).font(.subheadline)
                 }
                 Spacer()
             }
@@ -153,24 +161,31 @@ struct SettingsView: View {
     }
 
     private var preview: some View {
-        VStack(spacing: 4) {
+        let palette = KeyboardTheme(preferences, dark: colorScheme == .dark)
+        return VStack(spacing: 4) {
             ForEach(Array(preferences.enabledLayouts[0].rows.prefix(4).enumerated()), id: \.offset) { _, row in
                 HStack(spacing: 3) {
                     ForEach(Array(row.enumerated()), id: \.offset) { _, key in
                         Text(key)
                             .font(.system(size: 12, weight: .medium, design: .rounded))
                             .frame(maxWidth: .infinity, minHeight: 23)
-                            .background(.white.opacity(0.16), in: RoundedRectangle(cornerRadius: 6))
+                            .foregroundStyle(Color(uiColor: palette.text))
+                            .background(Color(uiColor: palette.key), in: RoundedRectangle(cornerRadius: 6))
                     }
                 }
             }
             HStack(spacing: 4) {
                 Text("123").frame(width: 38, height: 23)
+                    .foregroundStyle(Color(uiColor: palette.functionText))
+                    .background(Color(uiColor: palette.function), in: RoundedRectangle(cornerRadius: 8))
                 Text(preferences.enabledLayouts[0].space).frame(maxWidth: .infinity).frame(height: 23)
+                    .foregroundStyle(Color(uiColor: palette.text))
+                    .background(Color(uiColor: palette.key), in: RoundedRectangle(cornerRadius: 8))
                 Text("↵").frame(width: 40, height: 23)
+                    .foregroundStyle(Color(uiColor: palette.accentText))
+                    .background(Color(uiColor: palette.accent), in: RoundedRectangle(cornerRadius: 8))
             }
             .font(.system(size: 11, weight: .semibold))
-            .background(.white.opacity(0.20), in: RoundedRectangle(cornerRadius: 8))
         }
         .accessibilityHidden(true)
     }
