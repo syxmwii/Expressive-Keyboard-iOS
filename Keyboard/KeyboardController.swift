@@ -258,7 +258,7 @@ final class KeyboardController: UIInputViewController, UIGestureRecognizerDelega
             layer.colors = [orb.color.cgColor, orb.color.withAlphaComponent(0).cgColor]
             layer.startPoint = CGPoint(x: 0.5, y: 0.5)
             layer.endPoint = CGPoint(x: 1, y: 1)
-            view.layer.insertSublayer(layer, at: 1 + orbLayers.count)
+            view.layer.insertSublayer(layer, at: UInt32(1 + orbLayers.count))
             orbLayers.append(layer)
         }
         layoutOrbs()
